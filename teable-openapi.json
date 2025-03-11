@@ -144,7 +144,7 @@
             }
           }
         },
-        "operationId": "getTableTableidRecordRecordid"
+        "operationId": "getGetRecord"
       },
       "patch": {
         "summary": "Update record",
@@ -297,7 +297,7 @@
             }
           }
         },
-        "operationId": "modifyTableTableidRecordRecordid"
+        "operationId": "modifyUpdateRecord"
       },
       "delete": {
         "summary": "Delete record",
@@ -333,7 +333,7 @@
             "description": "Deleted successfully"
           }
         },
-        "operationId": "deleteTableTableidRecordRecordid"
+        "operationId": "deleteDeleteRecord"
       },
       "post": {
         "summary": "Duplicate record",
@@ -532,7 +532,7 @@
             }
           }
         },
-        "operationId": "createTableTableidRecordRecordid"
+        "operationId": "createDuplicateRecord"
       }
     },
     "/table/{tableId}/record": {
@@ -961,7 +961,7 @@
             }
           }
         },
-        "operationId": "getTableTableidRecord"
+        "operationId": "getListRecords"
       },
       "post": {
         "summary": "Create records",
@@ -1200,7 +1200,7 @@
             }
           }
         },
-        "operationId": "createTableTableidRecord"
+        "operationId": "createCreateRecords"
       },
       "patch": {
         "summary": "Update multiple records",
@@ -1355,7 +1355,7 @@
             }
           }
         },
-        "operationId": "modifyTableTableidRecord"
+        "operationId": "modifyUpdateMultipleRecords"
       },
       "delete": {
         "summary": "Delete records",
@@ -1394,7 +1394,7 @@
             "description": "Deleted successfully"
           }
         },
-        "operationId": "deleteTableTableidRecord"
+        "operationId": "deleteDeleteRecords"
       }
     },
     "/space": {
@@ -1512,7 +1512,7 @@
             }
           }
         },
-        "operationId": "getSpace"
+        "operationId": "getGetSpaceList"
       }
     },
     "/space/{spaceId}": {
@@ -1541,7 +1541,7 @@
             "description": "Deleted successfully"
           }
         },
-        "operationId": "deleteSpaceSpaceid"
+        "operationId": "deleteSpace"
       },
       "get": {
         "description": "Get a space by spaceId",
@@ -1613,7 +1613,7 @@
             }
           }
         },
-        "operationId": "getSpaceSpaceid"
+        "operationId": "getSpace"
       },
       "patch": {
         "description": "Update a space info",
@@ -1673,7 +1673,7 @@
             }
           }
         },
-        "operationId": "modifySpaceSpaceid"
+        "operationId": "modifySpace"
       }
     },
     "/space/{spaceId}/invitation/link": {
@@ -1747,7 +1747,7 @@
             }
           }
         },
-        "operationId": "getSpaceSpaceidInvitationLink"
+        "operationId": "getSpace1"
       },
       "post": {
         "description": "Create a invitation link to your",
@@ -1840,7 +1840,7 @@
             }
           }
         },
-        "operationId": "createSpaceSpaceidInvitationLink"
+        "operationId": "createSpace1"
       }
     },
     "/space/{spaceId}/invitation/link/{invitationId}": {
@@ -1877,7 +1877,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "deleteSpaceSpaceidInvitationLinkInvitationid"
+        "operationId": "deleteSpace1"
       },
       "patch": {
         "description": "Update a invitation link to your",
@@ -1962,7 +1962,7 @@
             }
           }
         },
-        "operationId": "modifySpaceSpaceidInvitationLinkInvitationid"
+        "operationId": "modifySpace1"
       }
     },
     "/space/{spaceId}/invitation/email": {
@@ -2042,7 +2042,7 @@
             }
           }
         },
-        "operationId": "createSpaceSpaceidInvitationEmail"
+        "operationId": "createSpace2"
       }
     },
     "/space/{spaceId}/collaborators": {
@@ -2282,7 +2282,7 @@
             }
           }
         },
-        "operationId": "getSpaceSpaceidCollaborators"
+        "operationId": "getSpace2"
       },
       "delete": {
         "description": "Delete a collaborator",
@@ -2329,7 +2329,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "deleteSpaceSpaceidCollaborators"
+        "operationId": "deleteSpace2"
       },
       "patch": {
         "description": "Update a space collaborator",
@@ -2400,7 +2400,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "modifySpaceSpaceidCollaborators"
+        "operationId": "modifySpace2"
       }
     },
     "/base": {
@@ -2494,7 +2494,7 @@
             "description": "Deleted successfully"
           }
         },
-        "operationId": "deleteBaseBaseid"
+        "operationId": "deleteBase"
       },
       "get": {
         "description": "Get a base by baseId",
@@ -2560,7 +2560,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseid"
+        "operationId": "getBase"
       },
       "patch": {
         "description": "Update a base info",
@@ -2626,7 +2626,7 @@
             }
           }
         },
-        "operationId": "modifyBaseBaseid"
+        "operationId": "modifyBase"
       }
     },
     "/table/{tableId}/view/{viewId}/order": {
@@ -2688,7 +2688,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidOrder"
+        "operationId": "updateView"
       }
     },
     "/base/{baseId}/order": {
@@ -2742,7 +2742,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateBaseBaseidOrder"
+        "operationId": "updateBase"
       }
     },
     "/base/access/all": {
@@ -2813,7 +2813,7 @@
             }
           }
         },
-        "operationId": "getBaseAccessAll"
+        "operationId": "getBase1"
       }
     },
     "/base/{baseId}/collaborators": {
@@ -3044,7 +3044,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidCollaborators"
+        "operationId": "getBase2"
       },
       "delete": {
         "description": "Delete a base collaborators",
@@ -3091,7 +3091,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "deleteBaseBaseidCollaborators"
+        "operationId": "deleteBase1"
       },
       "patch": {
         "description": "Update a base collaborator",
@@ -3161,7 +3161,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "modifyBaseBaseidCollaborators"
+        "operationId": "modifyBase1"
       }
     },
     "/base/duplicate": {
@@ -3244,7 +3244,7 @@
             }
           }
         },
-        "operationId": "createBaseDuplicate"
+        "operationId": "createBase1"
       }
     },
     "/base/create-from-template": {
@@ -3310,7 +3310,7 @@
             }
           }
         },
-        "operationId": "createBaseCreatefromtemplate"
+        "operationId": "createBase2"
       }
     },
     "/base/{baseId}/permission": {
@@ -3349,7 +3349,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidPermission"
+        "operationId": "getBase3"
       }
     },
     "/base/{baseId}/query": {
@@ -3412,7 +3412,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidQuery"
+        "operationId": "getBase4"
       }
     },
     "/base/{baseId}/invitation/link": {
@@ -3485,7 +3485,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidInvitationLink"
+        "operationId": "getBase5"
       },
       "post": {
         "description": "Create a invitation link to your",
@@ -3576,7 +3576,7 @@
             }
           }
         },
-        "operationId": "createBaseBaseidInvitationLink"
+        "operationId": "createBase3"
       }
     },
     "/base/{baseId}/invitation/link/{invitationId}": {
@@ -3613,7 +3613,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "deleteBaseBaseidInvitationLinkInvitationid"
+        "operationId": "deleteBase2"
       },
       "patch": {
         "description": "Update a invitation link to your",
@@ -3696,7 +3696,7 @@
             }
           }
         },
-        "operationId": "modifyBaseBaseidInvitationLinkInvitationid"
+        "operationId": "modifyBase2"
       }
     },
     "/base/{baseId}/invitation/email": {
@@ -3775,7 +3775,7 @@
             }
           }
         },
-        "operationId": "createBaseBaseidInvitationEmail"
+        "operationId": "createBase4"
       }
     },
     "/base/shared-base": {
@@ -3839,7 +3839,7 @@
             }
           }
         },
-        "operationId": "getBaseSharedbase"
+        "operationId": "getBase6"
       }
     },
     "/base/{baseId}/permanent": {
@@ -3868,7 +3868,7 @@
             "description": "Permanently deleted successfully"
           }
         },
-        "operationId": "deleteBaseBaseidPermanent"
+        "operationId": "deleteBase3"
       }
     },
     "/space/{spaceId}/collaborator": {
@@ -3944,7 +3944,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "createSpaceSpaceidCollaborator"
+        "operationId": "createSpace3"
       }
     },
     "/base/{baseId}/collaborator": {
@@ -4019,7 +4019,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "createBaseBaseidCollaborator"
+        "operationId": "createBase5"
       }
     },
     "/space/{spaceId}/base": {
@@ -4100,7 +4100,7 @@
             }
           }
         },
-        "operationId": "getSpaceSpaceidBase"
+        "operationId": "getBase7"
       }
     },
     "/space/{spaceId}/permanent": {
@@ -4129,7 +4129,7 @@
             "description": "Permanently deleted successfully"
           }
         },
-        "operationId": "deleteSpaceSpaceidPermanent"
+        "operationId": "deleteSpace3"
       }
     },
     "/admin/setting": {
@@ -4234,7 +4234,7 @@
             "description": "Update settings successfully."
           }
         },
-        "operationId": "modifyAdminSetting"
+        "operationId": "modifyAdmin"
       },
       "get": {
         "description": "Get the instance settings",
@@ -4351,7 +4351,7 @@
             }
           }
         },
-        "operationId": "getAdminSetting"
+        "operationId": "getAdmin"
       }
     },
     "/admin/setting/public": {
@@ -4457,7 +4457,7 @@
             }
           }
         },
-        "operationId": "getAdminSettingPublic"
+        "operationId": "getAdmin1"
       }
     },
     "/admin/plugin/{pluginId}/publish": {
@@ -4486,7 +4486,7 @@
             "description": "Plugin published successfully."
           }
         },
-        "operationId": "modifyAdminPluginPluginidPublish"
+        "operationId": "modifyAdmin1"
       }
     },
     "/admin/plugin/{pluginId}/unpublish": {
@@ -4515,7 +4515,7 @@
             "description": "Plugin unpublished successfully."
           }
         },
-        "operationId": "modifyAdminPluginPluginidUnpublish"
+        "operationId": "modifyAdmin2"
       }
     },
     "/space/{spaceId}/integration": {
@@ -4645,7 +4645,7 @@
             }
           }
         },
-        "operationId": "getSpaceSpaceidIntegration"
+        "operationId": "getSpace3"
       },
       "post": {
         "description": "Create a integration to a space",
@@ -4757,7 +4757,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "createSpaceSpaceidIntegration"
+        "operationId": "createSpace4"
       }
     },
     "/space/{spaceId}/integration/{integrationId}": {
@@ -4869,7 +4869,7 @@
             "description": "Successful response."
           }
         },
-        "operationId": "modifySpaceSpaceidIntegrationIntegrationid"
+        "operationId": "modifySpace3"
       },
       "delete": {
         "description": "Delete a integration by integrationId",
@@ -4905,7 +4905,7 @@
             "description": "Deleted successfully"
           }
         },
-        "operationId": "deleteSpaceSpaceidIntegrationIntegrationid"
+        "operationId": "deleteSpace4"
       }
     },
     "/trash": {
@@ -5532,7 +5532,7 @@
             }
           }
         },
-        "operationId": "getTrashItems"
+        "operationId": "getTrash1"
       }
     },
     "/trash/reset-items": {
@@ -5582,7 +5582,7 @@
             "description": "Reset successfully"
           }
         },
-        "operationId": "deleteTrashResetitems"
+        "operationId": "deleteBase4"
       }
     },
     "/trash/restore/{trashId}": {
@@ -5611,7 +5611,7 @@
             "description": "Restored successfully"
           }
         },
-        "operationId": "createTrashRestoreTrashid"
+        "operationId": "createSpace5"
       }
     },
     "/table/{tableId}/record/{recordId}/history": {
@@ -5863,7 +5863,7 @@
             }
           }
         },
-        "operationId": "getTableTableidRecordRecordidHistory"
+        "operationId": "getGetRecordHistory"
       }
     },
     "/table/{tableId}/record/history": {
@@ -6107,7 +6107,7 @@
             }
           }
         },
-        "operationId": "getTableTableidRecordHistory"
+        "operationId": "getGetTableRecordsHistory"
       }
     },
     "/table/{tableId}/record/{recordId}/{fieldId}/uploadAttachment": {
@@ -6222,7 +6222,7 @@
             }
           }
         },
-        "operationId": "createTableTableidRecordRecordidFieldidUploadattachment"
+        "operationId": "createUploadAttachment"
       }
     },
     "/table/{tableId}/record/{recordId}/status": {
@@ -6543,7 +6543,7 @@
             }
           }
         },
-        "operationId": "getTableTableidRecordRecordidStatus"
+        "operationId": "getGetRecordStatus"
       }
     },
     "/table/{tableId}/field": {
@@ -9548,7 +9548,7 @@
             }
           }
         },
-        "operationId": "createTableTableidField"
+        "operationId": "createCreateField"
       },
       "get": {
         "summary": "List fields",
@@ -11150,7 +11150,7 @@
             }
           }
         },
-        "operationId": "getTableTableidField"
+        "operationId": "getListFields"
       },
       "delete": {
         "summary": "Delete multiple fields",
@@ -11189,7 +11189,7 @@
             "description": "Deleted successfully"
           }
         },
-        "operationId": "deleteTableTableidField"
+        "operationId": "deleteDeleteMultipleFields"
       }
     },
     "/table/{tableId}/field/{fieldId}": {
@@ -11227,7 +11227,7 @@
             "description": "Deleted successfully"
           }
         },
-        "operationId": "deleteTableTableidFieldFieldid"
+        "operationId": "deleteDeleteField"
       },
       "get": {
         "summary": "Get a field",
@@ -12804,7 +12804,7 @@
             }
           }
         },
-        "operationId": "getTableTableidFieldFieldid"
+        "operationId": "getGetAField"
       },
       "patch": {
         "summary": "Update field",
@@ -12869,7 +12869,7 @@
             "description": "Updated Successfully"
           }
         },
-        "operationId": "modifyTableTableidFieldFieldid"
+        "operationId": "modifyUpdateField"
       }
     },
     "/table/{tableId}/field/{fieldId}/convert": {
@@ -15862,7 +15862,7 @@
             }
           }
         },
-        "operationId": "updateTableTableidFieldFieldidConvert"
+        "operationId": "updateConvertFieldType"
       }
     },
     "/table/{tableId}/view/{viewId}/filter-link-records": {
@@ -15935,7 +15935,7 @@
             }
           }
         },
-        "operationId": "getTableTableidViewViewidFilterlinkrecords"
+        "operationId": "getView"
       }
     },
     "/table/{tableId}/field/{fieldId}/filter-link-records": {
@@ -16009,7 +16009,7 @@
             }
           }
         },
-        "operationId": "getTableTableidFieldFieldidFilterlinkrecords"
+        "operationId": "getGetLinkedRecordsForFilter"
       }
     },
     "/table/{tableId}/view": {
@@ -17001,7 +17001,7 @@
             }
           }
         },
-        "operationId": "createTableTableidView"
+        "operationId": "createView"
       },
       "get": {
         "summary": "Get view list",
@@ -17524,7 +17524,7 @@
             }
           }
         },
-        "operationId": "getTableTableidView"
+        "operationId": "getGetViewList"
       }
     },
     "/table/{tableId}/view/{viewId}": {
@@ -17561,7 +17561,7 @@
             "description": "Deleted successfully"
           }
         },
-        "operationId": "deleteTableTableidViewViewid"
+        "operationId": "deleteView"
       },
       "get": {
         "description": "Get a view",
@@ -18088,7 +18088,7 @@
             }
           }
         },
-        "operationId": "getTableTableidViewViewid"
+        "operationId": "getView1"
       }
     },
     "/table/{tableId}/view/{viewId}/manual-sort": {
@@ -18162,7 +18162,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidManualsort"
+        "operationId": "updateView1"
       }
     },
     "/table/{tableId}/view/{viewId}/column-meta": {
@@ -18316,7 +18316,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidColumnmeta"
+        "operationId": "updateView2"
       }
     },
     "/table/{tableId}/view/{viewId}/filter": {
@@ -18375,7 +18375,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidFilter"
+        "operationId": "updateView3"
       }
     },
     "/table/{tableId}/view/{viewId}/sort": {
@@ -18453,7 +18453,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidSort"
+        "operationId": "updateView4"
       }
     },
     "/table/{tableId}/view/{viewId}/group": {
@@ -18520,7 +18520,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidGroup"
+        "operationId": "updateView5"
       }
     },
     "/table/{tableId}/view/{viewId}/options": {
@@ -18783,7 +18783,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "modifyTableTableidViewViewidOptions"
+        "operationId": "modifyView"
       }
     },
     "/table/{tableId}/view/{viewId}/record-order": {
@@ -18856,7 +18856,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidRecordorder"
+        "operationId": "updateView6"
       }
     },
     "/table/{tableId}/view/{viewId}/name": {
@@ -18910,7 +18910,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidName"
+        "operationId": "updateView7"
       }
     },
     "/table/{tableId}/view/{viewId}/description": {
@@ -18964,7 +18964,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidDescription"
+        "operationId": "updateView8"
       }
     },
     "/table/{tableId}/view/{viewId}/share-meta": {
@@ -19036,7 +19036,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidSharemeta"
+        "operationId": "updateView9"
       }
     },
     "/table/{tableId}/view/{viewId}/refresh-share-id": {
@@ -19088,7 +19088,7 @@
             }
           }
         },
-        "operationId": "createTableTableidViewViewidRefreshshareid"
+        "operationId": "createView1"
       }
     },
     "/table/{tableId}/view/{viewId}/disable-share": {
@@ -19125,7 +19125,7 @@
             "description": "Returns successfully disable view share"
           }
         },
-        "operationId": "createTableTableidViewViewidDisableshare"
+        "operationId": "createView2"
       }
     },
     "/table/{tableId}/view/{viewId}/enable-share": {
@@ -19177,7 +19177,7 @@
             }
           }
         },
-        "operationId": "createTableTableidViewViewidEnableshare"
+        "operationId": "createView3"
       }
     },
     "/table/{tableId}/view/plugin": {
@@ -19253,7 +19253,7 @@
             }
           }
         },
-        "operationId": "createTableTableidViewPlugin"
+        "operationId": "createView4"
       }
     },
     "/base/{baseId}/dashboard": {
@@ -19307,7 +19307,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidDashboard"
+        "operationId": "getDashboard"
       },
       "post": {
         "description": "Create a new dashboard",
@@ -19370,7 +19370,7 @@
             }
           }
         },
-        "operationId": "createBaseBaseidDashboard"
+        "operationId": "createDashboard"
       }
     },
     "/base/{baseId}/dashboard/{id}": {
@@ -19481,7 +19481,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidDashboardId"
+        "operationId": "getDashboard1"
       },
       "delete": {
         "description": "Delete a dashboard by id",
@@ -19516,7 +19516,7 @@
             "description": "Dashboard deleted"
           }
         },
-        "operationId": "deleteBaseBaseidDashboardId"
+        "operationId": "deleteDashboard"
       }
     },
     "/base/{baseId}/dashboard/{dashboardId}/rename": {
@@ -19589,7 +19589,7 @@
             }
           }
         },
-        "operationId": "modifyBaseBaseidDashboardDashboardidRename"
+        "operationId": "modifyDashboard"
       }
     },
     "/base/{baseId}/dashboard/{id}/layout": {
@@ -19716,7 +19716,7 @@
             }
           }
         },
-        "operationId": "modifyBaseBaseidDashboardIdLayout"
+        "operationId": "modifyDashboard1"
       }
     },
     "/base/{baseId}/dashboard/{id}/plugin": {
@@ -19801,7 +19801,7 @@
             }
           }
         },
-        "operationId": "createBaseBaseidDashboardIdPlugin"
+        "operationId": "createDashboard1"
       }
     },
     "/base/{baseId}/dashboard/{dashboardId}/plugin/{pluginInstallId}": {
@@ -19846,7 +19846,7 @@
             "description": "Plugin removed successfully."
           }
         },
-        "operationId": "deleteBaseBaseidDashboardDashboardidPluginPlugininstallid"
+        "operationId": "deleteDashboard1"
       }
     },
     "/base/{baseId}/dashboard/{dashboardId}/plugin/{pluginInstallId}/rename": {
@@ -19931,7 +19931,7 @@
             }
           }
         },
-        "operationId": "modifyBaseBaseidDashboardDashboardidPluginPlugininstallidRename"
+        "operationId": "modifyDashboard2"
       }
     },
     "/base/{baseId}/dashboard/{dashboardId}/plugin/{installPluginId}": {
@@ -20009,7 +20009,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidDashboardDashboardidPluginInstallpluginid"
+        "operationId": "getDashboard2"
       }
     },
     "/base/{baseId}/dashboard/{dashboardId}/plugin/{pluginInstallId}/update-storage": {
@@ -20100,7 +20100,7 @@
             }
           }
         },
-        "operationId": "modifyBaseBaseidDashboardDashboardidPluginPlugininstallidUpdatestorage"
+        "operationId": "modifyDashboard3"
       }
     },
     "/table/{tableId}/view/{viewId}/plugin/{pluginInstallId}": {
@@ -20191,7 +20191,7 @@
             }
           }
         },
-        "operationId": "modifyTableTableidViewViewidPluginPlugininstallid"
+        "operationId": "modifyView1"
       }
     },
     "/table/{tableId}/view/{viewId}/plugin": {
@@ -20264,7 +20264,7 @@
             }
           }
         },
-        "operationId": "getTableTableidViewViewidPlugin"
+        "operationId": "getView2"
       }
     },
     "/table/{tableId}/view/{viewId}/locked": {
@@ -20315,7 +20315,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "updateTableTableidViewViewidLocked"
+        "operationId": "updateView10"
       }
     },
     "/table/{tableId}/aggregation": {
@@ -20474,7 +20474,7 @@
             }
           }
         },
-        "operationId": "getTableTableidAggregation"
+        "operationId": "getGetAggregatedStatistics"
       }
     },
     "/table/{tableId}/aggregation/row-count": {
@@ -20679,7 +20679,7 @@
             }
           }
         },
-        "operationId": "getTableTableidAggregationRowcount"
+        "operationId": "getGetTotalRowCount"
       }
     },
     "/table/{tableId}/aggregation/group-points": {
@@ -20879,7 +20879,7 @@
             }
           }
         },
-        "operationId": "getTableTableidAggregationGrouppoints"
+        "operationId": "getGetGroupPoints"
       }
     },
     "/table/{tableId}/aggregation/calendar-daily-collection": {
@@ -21095,7 +21095,7 @@
             }
           }
         },
-        "operationId": "getTableTableidAggregationCalendardailycollection"
+        "operationId": "getGetDailyCalendarData"
       }
     },
     "/table/{tableId}/aggregation/search-count": {
@@ -21228,7 +21228,7 @@
             }
           }
         },
-        "operationId": "getTableTableidAggregationSearchcount"
+        "operationId": "getGetTotalCountOfSearch"
       }
     },
     "/table/{tableId}/aggregation/search-index": {
@@ -21445,7 +21445,7 @@
             }
           }
         },
-        "operationId": "getTableTableidAggregationSearchindex"
+        "operationId": "getGetRecordIndicesForSearch"
       }
     },
     "/base/{baseId}/table/": {
@@ -25577,7 +25577,7 @@
             }
           }
         },
-        "operationId": "createBaseBaseidTable"
+        "operationId": "createCreateTable"
       }
     },
     "/base/{baseId}/table/{tableId}": {
@@ -25615,7 +25615,7 @@
             "description": "Table successfully moved to trash."
           }
         },
-        "operationId": "deleteBaseBaseidTableTableid"
+        "operationId": "deleteDeleteTable"
       },
       "get": {
         "summary": "Get table details",
@@ -25697,7 +25697,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidTableTableid"
+        "operationId": "getGetTableDetails"
       }
     },
     "/base/{baseId}/table": {
@@ -25777,7 +25777,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidTable"
+        "operationId": "getListTables"
       }
     },
     "/base/{baseId}/table/{tableId}/permanent": {
@@ -25815,7 +25815,7 @@
             "description": "Table and all associated data permanently deleted."
           }
         },
-        "operationId": "deleteBaseBaseidTableTableidPermanent"
+        "operationId": "deletePermanentlyDeleteTable"
       }
     },
     "/base/{baseId}/table/{tableId}/name": {
@@ -25870,7 +25870,7 @@
             "description": "Table name successfully updated."
           }
         },
-        "operationId": "updateBaseBaseidTableTableidName"
+        "operationId": "updateUpdateTableName"
       }
     },
     "/base/{baseId}/table/{tableId}/icon": {
@@ -25925,7 +25925,7 @@
             "description": "Table icon successfully updated."
           }
         },
-        "operationId": "updateBaseBaseidTableTableidIcon"
+        "operationId": "updateUpdateTableTcon"
       }
     },
     "/base/{baseId}/table/{tableId}/order": {
@@ -25988,7 +25988,7 @@
             "description": "Table order successfully updated."
           }
         },
-        "operationId": "updateBaseBaseidTableTableidOrder"
+        "operationId": "updateUpdateTableOrder"
       }
     },
     "/base/{baseId}/table/{tableId}/description": {
@@ -26044,7 +26044,7 @@
             "description": "Table description successfully updated."
           }
         },
-        "operationId": "updateBaseBaseidTableTableidDescription"
+        "operationId": "updateUpdateTableDescription"
       }
     },
     "/base/{baseId}/table/{tableId}/db-table-name": {
@@ -26102,7 +26102,7 @@
             "description": "Database table name successfully updated."
           }
         },
-        "operationId": "updateBaseBaseidTableTableidDbtablename"
+        "operationId": "updateUpdateDbTableName"
       }
     },
     "/base/{baseId}/table/{tableId}/default-view-id": {
@@ -26155,7 +26155,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidTableTableidDefaultviewid"
+        "operationId": "getGetDefaultViewId"
       }
     },
     "/base/{baseId}/table/{tableId}/permission": {
@@ -26247,7 +26247,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidTableTableidPermission"
+        "operationId": "getGetTablePermissions"
       }
     },
     "/base/{baseId}/table/{tableId}/index": {
@@ -26305,7 +26305,7 @@
             "description": "No return"
           }
         },
-        "operationId": "createBaseBaseidTableTableidIndex"
+        "operationId": "createToggleTableIndex"
       }
     },
     "/base/{baseId}/table/{tableId}/activated-index": {
@@ -26356,7 +26356,7 @@
             }
           }
         },
-        "operationId": "createBaseBaseidTableTableidActivatedindex"
+        "operationId": "createGetActivatedIndex"
       }
     },
     "/base/{baseId}/table/{tableId}/abnormal-index": {
@@ -26423,7 +26423,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidTableTableidAbnormalindex"
+        "operationId": "getGetAbnormalIndexes"
       }
     },
     "/base/{baseId}/table/{tableId}/index/repair": {
@@ -26472,7 +26472,7 @@
             "description": "Succeed"
           }
         },
-        "operationId": "modifyBaseBaseidTableTableidIndexRepair"
+        "operationId": "modifyRepairTableIndex"
       }
     },
     "/base/{baseId}/table/{tableId}/duplicate": {
@@ -26531,7 +26531,7 @@
             "description": "Duplicate successfully"
           }
         },
-        "operationId": "createBaseBaseidTableTableidDuplicate"
+        "operationId": "createDuplicateATable"
       }
     },
     "/table/{tableId}/selection/range-to-id": {
@@ -26822,7 +26822,7 @@
             }
           }
         },
-        "operationId": "getTableTableidSelectionRangetoid"
+        "operationId": "getGetIdsFromRange"
       }
     },
     "/table/{tableId}/selection/clear": {
@@ -27060,7 +27060,7 @@
             "description": "Successful clean up"
           }
         },
-        "operationId": "modifyTableTableidSelectionClear"
+        "operationId": "modifyClearSelectedRangeContent"
       }
     },
     "/table/{tableId}/selection/copy": {
@@ -28872,7 +28872,7 @@
             }
           }
         },
-        "operationId": "getTableTableidSelectionCopy"
+        "operationId": "getCopySelectedTableContent"
       }
     },
     "/table/{tableId}/selection/paste": {
@@ -30683,7 +30683,7 @@
             }
           }
         },
-        "operationId": "modifyTableTableidSelectionPaste"
+        "operationId": "modifyPasteContentIntoSelectedRange"
       }
     },
     "/table/{tableId}/selection/delete": {
@@ -30957,7 +30957,7 @@
             }
           }
         },
-        "operationId": "deleteTableTableidSelectionDelete"
+        "operationId": "deleteDeleteSelectedRangeData"
       }
     },
     "/table/{tableId}/selection/temporaryPaste": {
@@ -32617,7 +32617,7 @@
             }
           }
         },
-        "operationId": "modifyTableTableidSelectionTemporarypaste"
+        "operationId": "modifyPreviewPasteOperationResults"
       }
     },
     "/table/{tableId}/field/{fieldId}/plan": {
@@ -32742,7 +32742,7 @@
             }
           }
         },
-        "operationId": "getTableTableidFieldFieldidPlan"
+        "operationId": "getPlan"
       },
       "put": {
         "description": "Generate calculation plan for converting the field",
@@ -34277,7 +34277,7 @@
             }
           }
         },
-        "operationId": "updateTableTableidFieldFieldidPlan"
+        "operationId": "updatePlan"
       }
     },
     "/table/{tableId}/field/plan": {
@@ -35828,7 +35828,7 @@
             }
           }
         },
-        "operationId": "createTableTableidFieldPlan"
+        "operationId": "createPlan"
       }
     },
     "/attachments/notify/{token}": {
@@ -35921,7 +35921,7 @@
             }
           }
         },
-        "operationId": "createAttachmentsNotifyToken"
+        "operationId": "createAttachments"
       }
     },
     "/attachments/{token}": {
@@ -35959,7 +35959,7 @@
             "description": ""
           }
         },
-        "operationId": "getAttachmentsToken"
+        "operationId": "getAttachments"
       }
     },
     "/attachments/signature": {
@@ -36070,7 +36070,7 @@
             }
           }
         },
-        "operationId": "createAttachmentsSignature"
+        "operationId": "createAttachments1"
       }
     },
     "/attachments/upload/{token}": {
@@ -36111,7 +36111,7 @@
             "description": "Upload successful"
           }
         },
-        "operationId": "createAttachmentsUploadToken"
+        "operationId": "createAttachments2"
       }
     },
     "/user/name": {
@@ -36147,7 +36147,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "modifyUserName"
+        "operationId": "modifyUser"
       }
     },
     "/user/avatar": {
@@ -36184,7 +36184,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "modifyUserAvatar"
+        "operationId": "modifyUser1"
       }
     },
     "/user/notify-meta": {
@@ -36217,7 +36217,7 @@
             "description": "Successfully update."
           }
         },
-        "operationId": "modifyUserNotifymeta"
+        "operationId": "modifyUser2"
       }
     },
     "/auth/user/me": {
@@ -36303,7 +36303,7 @@
             }
           }
         },
-        "operationId": "getAuthUserMe"
+        "operationId": "getAuth"
       }
     },
     "/auth/signin": {
@@ -36413,7 +36413,7 @@
             }
           }
         },
-        "operationId": "createAuthSignin"
+        "operationId": "createAuth"
       }
     },
     "/auth/signout": {
@@ -36432,7 +36432,7 @@
             "description": "Sign out successfully"
           }
         },
-        "operationId": "createAuthSignout"
+        "operationId": "createAuth1"
       }
     },
     "/auth/signup": {
@@ -36572,7 +36572,7 @@
             }
           }
         },
-        "operationId": "createAuthSignup"
+        "operationId": "createAuth2"
       }
     },
     "/auth/change-password": {
@@ -36617,7 +36617,7 @@
             "description": "Change password successfully"
           }
         },
-        "operationId": "modifyAuthChangepassword"
+        "operationId": "modifyAuth"
       }
     },
     "/auth/send-reset-password-email": {
@@ -36654,7 +36654,7 @@
             "description": "Successfully sent reset password email"
           }
         },
-        "operationId": "createAuthSendresetpasswordemail"
+        "operationId": "createAuth3"
       }
     },
     "/auth/reset-password": {
@@ -36697,7 +36697,7 @@
             "description": "Successfully reset password"
           }
         },
-        "operationId": "createAuthResetpassword"
+        "operationId": "createAuth4"
       }
     },
     "/auth/add-password": {
@@ -36736,7 +36736,7 @@
             "description": "Successfully added password"
           }
         },
-        "operationId": "createAuthAddpassword"
+        "operationId": "createAuth5"
       }
     },
     "/auth/user": {
@@ -36782,7 +36782,7 @@
             }
           }
         },
-        "operationId": "getAuthUser"
+        "operationId": "getAuth1"
       }
     },
     "/auth/send-signup-verification-code": {
@@ -36838,7 +36838,7 @@
             }
           }
         },
-        "operationId": "createAuthSendsignupverificationcode"
+        "operationId": "createAuth6"
       }
     },
     "/auth/change-email": {
@@ -36883,7 +36883,7 @@
             "description": "Change email successfully"
           }
         },
-        "operationId": "modifyAuthChangeemail"
+        "operationId": "modifyAuth1"
       }
     },
     "/auth/send-change-email-code": {
@@ -36939,7 +36939,7 @@
             }
           }
         },
-        "operationId": "createAuthSendchangeemailcode"
+        "operationId": "createAuth7"
       }
     },
     "/auth/temp-token": {
@@ -36977,7 +36977,7 @@
             }
           }
         },
-        "operationId": "getAuthTemptoken"
+        "operationId": "getAuth2"
       }
     },
     "/base/{baseId}/connection": {
@@ -37090,7 +37090,7 @@
             }
           }
         },
-        "operationId": "createBaseBaseidConnection"
+        "operationId": "createDbconnection"
       },
       "delete": {
         "description": "Delete a db connection",
@@ -37117,7 +37117,7 @@
             "description": "Deleted successfully"
           }
         },
-        "operationId": "deleteBaseBaseidConnection"
+        "operationId": "deleteDbconnection"
       },
       "get": {
         "description": "Get db connection info",
@@ -37220,7 +37220,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidConnection"
+        "operationId": "getDbconnection"
       }
     },
     "/invitation/link/accept": {
@@ -37281,7 +37281,7 @@
             }
           }
         },
-        "operationId": "createInvitationLinkAccept"
+        "operationId": "createInvitation"
       }
     },
     "/share/{shareId}/view/auth": {
@@ -37343,7 +37343,7 @@
             }
           }
         },
-        "operationId": "createShareShareidViewAuth"
+        "operationId": "createShare"
       }
     },
     "/share/{shareId}/view": {
@@ -39592,7 +39592,7 @@
             }
           }
         },
-        "operationId": "getShareShareidView"
+        "operationId": "getShare"
       }
     },
     "/share/{shareId}/view/aggregations": {
@@ -40405,7 +40405,7 @@
             }
           }
         },
-        "operationId": "getShareShareidViewAggregations"
+        "operationId": "getShare1"
       }
     },
     "/share/{shareId}/view/row-count": {
@@ -40599,7 +40599,7 @@
             }
           }
         },
-        "operationId": "getShareShareidViewRowcount"
+        "operationId": "getShare2"
       }
     },
     "/share/{shareId}/view/form-submit": {
@@ -40700,7 +40700,7 @@
             }
           }
         },
-        "operationId": "createShareShareidViewFormsubmit"
+        "operationId": "createShare1"
       }
     },
     "/share/{shareId}/view/copy": {
@@ -42511,7 +42511,7 @@
             }
           }
         },
-        "operationId": "getShareShareidViewCopy"
+        "operationId": "getShare3"
       }
     },
     "/share/{shareId}/view/group-points": {
@@ -42700,7 +42700,7 @@
             }
           }
         },
-        "operationId": "getShareShareidViewGrouppoints"
+        "operationId": "getShare4"
       }
     },
     "/share/{shareId}/view/link-records": {
@@ -42813,7 +42813,7 @@
             }
           }
         },
-        "operationId": "getShareShareidViewLinkrecords"
+        "operationId": "getShare5"
       }
     },
     "/share/{shareId}/view/collaborators": {
@@ -42918,7 +42918,7 @@
             }
           }
         },
-        "operationId": "getShareShareidViewCollaborators"
+        "operationId": "getShare6"
       }
     },
     "/share/{shareId}/view/search-count": {
@@ -43050,7 +43050,7 @@
             }
           }
         },
-        "operationId": "getShareShareidViewSearchcount"
+        "operationId": "getShare7"
       }
     },
     "/share/{shareId}/view/search-index": {
@@ -43266,7 +43266,7 @@
             }
           }
         },
-        "operationId": "getShareShareidViewSearchindex"
+        "operationId": "getShare8"
       }
     },
     "/share/{shareId}/view/calendar-daily-collection": {
@@ -43471,7 +43471,7 @@
             }
           }
         },
-        "operationId": "getShareShareidViewCalendardailycollection"
+        "operationId": "getShare9"
       }
     },
     "/notifications": {
@@ -43604,7 +43604,7 @@
             }
           }
         },
-        "operationId": "getNotifications"
+        "operationId": "getNotification"
       }
     },
     "/notifications/{notificationId}/status": {
@@ -43650,7 +43650,7 @@
             "description": "Returns successfully patch notification status"
           }
         },
-        "operationId": "modifyNotificationsNotificationidStatus"
+        "operationId": "modifyNotification"
       }
     },
     "/notifications/read-all": {
@@ -43669,7 +43669,7 @@
             "description": "Returns successfully"
           }
         },
-        "operationId": "modifyNotificationsReadall"
+        "operationId": "modifyNotification1"
       }
     },
     "/notifications/unread-count": {
@@ -43704,7 +43704,7 @@
             }
           }
         },
-        "operationId": "getNotificationsUnreadcount"
+        "operationId": "getNotification1"
       }
     },
     "/access-token": {
@@ -43974,7 +43974,7 @@
             }
           }
         },
-        "operationId": "createAccesstokenIdRefresh"
+        "operationId": "createAccesstoken1"
       }
     },
     "/access-token/{id}": {
@@ -44003,7 +44003,7 @@
             "description": "Access token deleted."
           }
         },
-        "operationId": "deleteAccesstokenId"
+        "operationId": "deleteAccesstoken"
       },
       "put": {
         "description": "Update access token",
@@ -44112,7 +44112,7 @@
             }
           }
         },
-        "operationId": "updateAccesstokenId"
+        "operationId": "updateAccesstoken"
       },
       "get": {
         "description": "Get access token",
@@ -44191,7 +44191,7 @@
             }
           }
         },
-        "operationId": "getAccesstokenId"
+        "operationId": "getAccesstoken1"
       }
     },
     "/import/analyze": {
@@ -44301,7 +44301,7 @@
             }
           }
         },
-        "operationId": "getImportAnalyze"
+        "operationId": "getImport"
       }
     },
     "/import/{baseId}": {
@@ -44479,7 +44479,7 @@
             }
           }
         },
-        "operationId": "createImportBaseid"
+        "operationId": "createImport"
       }
     },
     "/import/{baseId}/{tableId}": {
@@ -44569,7 +44569,7 @@
             "description": "Successfully import table inplace"
           }
         },
-        "operationId": "modifyImportBaseidTableid"
+        "operationId": "modifyImport"
       }
     },
     "/export/{tableId}": {
@@ -44606,7 +44606,7 @@
             "description": "Download successful"
           }
         },
-        "operationId": "getExportTableid"
+        "operationId": "getExport"
       }
     },
     "/pin": {
@@ -44740,7 +44740,7 @@
             }
           }
         },
-        "operationId": "getPinList"
+        "operationId": "getPin"
       }
     },
     "/pin/order": {
@@ -44804,7 +44804,7 @@
             "description": "Update  pin order successfully"
           }
         },
-        "operationId": "updatePinOrder"
+        "operationId": "updatePin"
       }
     },
     "/space/{spaceId}/billing/subscription/summary": {
@@ -44873,7 +44873,7 @@
             }
           }
         },
-        "operationId": "getSpaceSpaceidBillingSubscriptionSummary"
+        "operationId": "getBilling"
       }
     },
     "/billing/subscription/summary": {
@@ -44935,7 +44935,7 @@
             }
           }
         },
-        "operationId": "getBillingSubscriptionSummary"
+        "operationId": "getBilling1"
       }
     },
     "/space/{spaceId}/usage": {
@@ -45061,7 +45061,7 @@
             }
           }
         },
-        "operationId": "getSpaceSpaceidUsage"
+        "operationId": "getUsage"
       }
     },
     "/instance/usage": {
@@ -45177,7 +45177,7 @@
             }
           }
         },
-        "operationId": "getInstanceUsage"
+        "operationId": "getUsage1"
       }
     },
     "/base/{baseId}/usage": {
@@ -45303,7 +45303,7 @@
             }
           }
         },
-        "operationId": "getBaseBaseidUsage"
+        "operationId": "getUsage2"
       }
     },
     "/oauth/client/{clientId}": {
@@ -45395,7 +45395,7 @@
             }
           }
         },
-        "operationId": "getOauthClientClientid"
+        "operationId": "getOauth"
       },
       "delete": {
         "description": "Delete an OAuth application",
@@ -45422,7 +45422,7 @@
             "description": "OAuth application deleted"
           }
         },
-        "operationId": "deleteOauthClientClientid"
+        "operationId": "deleteOauth"
       },
       "put": {
         "description": "Update an OAuth application",
@@ -45577,7 +45577,7 @@
             }
           }
         },
-        "operationId": "updateOauthClientClientid"
+        "operationId": "updateOauth"
       }
     },
     "/oauth/client": {
@@ -45728,7 +45728,7 @@
             }
           }
         },
-        "operationId": "createOauthClient"
+        "operationId": "createOauth"
       },
       "get": {
         "description": "Get the list of OAuth applications",
@@ -45779,7 +45779,7 @@
             }
           }
         },
-        "operationId": "getOauthClient"
+        "operationId": "getOauth1"
       }
     },
     "/oauth/client/{clientId}/secret/{secretId}": {
@@ -45808,7 +45808,7 @@
             "description": "OAuth secret deleted"
           }
         },
-        "operationId": "deleteOauthClientClientidSecretSecretid"
+        "operationId": "deleteOauth1"
       }
     },
     "/oauth/client/{clientId}/secret": {
@@ -45863,7 +45863,7 @@
             }
           }
         },
-        "operationId": "createOauthClientClientidSecret"
+        "operationId": "createOauth1"
       }
     },
     "/oauth/decision/{transactionId}": {
@@ -45925,7 +45925,7 @@
             }
           }
         },
-        "operationId": "getOauthDecisionTransactionid"
+        "operationId": "getOauth2"
       }
     },
     "/oauth/client/{clientId}/revoke-access": {
@@ -45953,7 +45953,7 @@
             "description": "Revoke access permission successfully"
           }
         },
-        "operationId": "createOauthClientClientidRevokeaccess"
+        "operationId": "createOauth2"
       }
     },
     "/oauth/client/authorized/list": {
@@ -46032,7 +46032,7 @@
             }
           }
         },
-        "operationId": "getOauthClientAuthorizedList"
+        "operationId": "getOauth3"
       }
     },
     "/table/{tableId}/undo-redo/undo": {
@@ -46084,7 +46084,7 @@
             }
           }
         },
-        "operationId": "createTableTableidUndoredoUndo"
+        "operationId": "createRecord"
       }
     },
     "/table/{tableId}/undo-redo/redo": {
@@ -46136,7 +46136,7 @@
             }
           }
         },
-        "operationId": "createTableTableidUndoredoRedo"
+        "operationId": "createRecord1"
       }
     },
     "/plugin": {
@@ -46606,7 +46606,7 @@
             "description": "Returns no content."
           }
         },
-        "operationId": "deletePluginId"
+        "operationId": "deletePlugin"
       },
       "put": {
         "description": "Update a plugin",
@@ -46931,7 +46931,7 @@
             }
           }
         },
-        "operationId": "updatePluginId"
+        "operationId": "updatePlugin"
       }
     },
     "/plugin/{id}/regenerate-secret": {
@@ -46979,7 +46979,7 @@
             }
           }
         },
-        "operationId": "createPluginIdRegeneratesecret"
+        "operationId": "createPlugin1"
       }
     },
     "/plugin/{pluginId}": {
@@ -47178,7 +47178,7 @@
             }
           }
         },
-        "operationId": "getPluginPluginid"
+        "operationId": "getPlugin1"
       }
     },
     "/plugin/center/list": {
@@ -47300,7 +47300,7 @@
             }
           }
         },
-        "operationId": "getPluginCenterList"
+        "operationId": "getPlugin2"
       }
     },
     "/plugin/{pluginId}/submit": {
@@ -47329,7 +47329,7 @@
             "description": "Plugin submitted successfully."
           }
         },
-        "operationId": "modifyPluginPluginidSubmit"
+        "operationId": "modifyPlugin"
       }
     },
     "/plugin/{pluginId}/token": {
@@ -47424,7 +47424,7 @@
             }
           }
         },
-        "operationId": "getPluginPluginidToken"
+        "operationId": "getPlugin3"
       }
     },
     "/plugin/{pluginId}/refreshToken": {
@@ -47508,7 +47508,7 @@
             }
           }
         },
-        "operationId": "createPluginPluginidRefreshtoken"
+        "operationId": "createPlugin2"
       }
     },
     "/plugin/{pluginId}/authCode": {
@@ -47569,7 +47569,7 @@
             }
           }
         },
-        "operationId": "createPluginPluginidAuthcode"
+        "operationId": "createPlugin3"
       }
     },
     "/plugin/{pluginId}/unpublish": {
@@ -47597,7 +47597,7 @@
             "description": "Plugin unpublished successfully."
           }
         },
-        "operationId": "modifyPluginPluginidUnpublish"
+        "operationId": "modifyPlugin1"
       }
     },
     "/comment/{tableId}/{recordId}/{commentId}/reaction": {
@@ -47659,7 +47659,7 @@
             "description": "Successfully create comment reaction."
           }
         },
-        "operationId": "createCommentTableidRecordidCommentidReaction"
+        "operationId": "createComment"
       },
       "delete": {
         "description": "delete record comment reaction",
@@ -47719,7 +47719,7 @@
             "description": "Successfully delete comment reaction."
           }
         },
-        "operationId": "deleteCommentTableidRecordidCommentidReaction"
+        "operationId": "deleteComment"
       }
     },
     "/comment/{tableId}/{recordId}/{commentId}": {
@@ -47970,7 +47970,7 @@
             }
           }
         },
-        "operationId": "getCommentTableidRecordidCommentid"
+        "operationId": "getComment"
       },
       "patch": {
         "description": "update record comment",
@@ -48153,7 +48153,7 @@
             "description": "Successfully update comment."
           }
         },
-        "operationId": "modifyCommentTableidRecordidCommentid"
+        "operationId": "modifyComment"
       },
       "delete": {
         "description": "delete record comment",
@@ -48196,7 +48196,7 @@
             "description": "Successfully delete comment."
           }
         },
-        "operationId": "deleteCommentTableidRecordidCommentid"
+        "operationId": "deleteComment1"
       }
     },
     "/comment/{tableId}/{recordId}/list": {
@@ -48525,7 +48525,7 @@
             }
           }
         },
-        "operationId": "getCommentTableidRecordidList"
+        "operationId": "getComment1"
       }
     },
     "/comment/{tableId}/{recordId}/create": {
@@ -48706,7 +48706,7 @@
             "description": "Successfully create comment."
           }
         },
-        "operationId": "createCommentTableidRecordidCreate"
+        "operationId": "createComment1"
       }
     },
     "/comment/{tableId}/{recordId}/subscribe": {
@@ -48743,7 +48743,7 @@
             "description": "Successfully subscribe record comment."
           }
         },
-        "operationId": "createCommentTableidRecordidSubscribe"
+        "operationId": "createComment2"
       },
       "delete": {
         "description": "unsubscribe record comment",
@@ -48778,7 +48778,7 @@
             "description": "Successfully subscribe record comment."
           }
         },
-        "operationId": "deleteCommentTableidRecordidSubscribe"
+        "operationId": "deleteComment2"
       },
       "get": {
         "description": "get record comment subscribe detail",
@@ -48837,7 +48837,7 @@
             }
           }
         },
-        "operationId": "getCommentTableidRecordidSubscribe"
+        "operationId": "getComment2"
       }
     },
     "/comment/{tableId}/{recordId}/attachment/{path}": {
@@ -48881,7 +48881,7 @@
             }
           }
         },
-        "operationId": "getCommentTableidRecordidAttachmentPath"
+        "operationId": "getComment3"
       }
     },
     "/comment/{tableId}/count": {
@@ -49196,7 +49196,7 @@
             }
           }
         },
-        "operationId": "getCommentTableidCount"
+        "operationId": "getComment4"
       }
     },
     "/comment/{tableId}/{recordId}/count": {
@@ -49504,7 +49504,7 @@
             }
           }
         },
-        "operationId": "getCommentTableidRecordidCount"
+        "operationId": "getComment5"
       }
     },
     "/organization/me": {
@@ -49547,7 +49547,7 @@
             }
           }
         },
-        "operationId": "getOrganizationMe"
+        "operationId": "getOrganization"
       }
     },
     "/organization/department": {
@@ -49640,7 +49640,7 @@
             }
           }
         },
-        "operationId": "getOrganizationDepartment"
+        "operationId": "getOrganization1"
       }
     },
     "/organization/department-user": {
@@ -49795,7 +49795,7 @@
             }
           }
         },
-        "operationId": "getOrganizationDepartmentuser"
+        "operationId": "getOrganization2"
       }
     },
     "/api/{baseId}/ai/generate-stream": {
@@ -49864,7 +49864,7 @@
             }
           }
         },
-        "operationId": "createApiBaseidAiGeneratestream"
+        "operationId": "createAi"
       }
     },
     "/{baseId}/ai/config": {
@@ -49995,7 +49995,7 @@
             }
           }
         },
-        "operationId": "getBaseidAiConfig"
+        "operationId": "getAi"
       }
     },
     "/integrity/base/{baseId}/link-check": {
@@ -50101,7 +50101,7 @@
             }
           }
         },
-        "operationId": "getIntegrityBaseBaseidLinkcheck"
+        "operationId": "getIntegrity"
       }
     },
     "/integrity/base/{baseId}/link-fix": {
@@ -50161,7 +50161,7 @@
             }
           }
         },
-        "operationId": "createIntegrityBaseBaseidLinkfix"
+        "operationId": "createIntegrity"
       }
     },
     "/table/{tableId}/plugin-panel/{pluginPanelId}": {
@@ -50198,7 +50198,7 @@
             "description": "Plugin panel retrieved successfully."
           }
         },
-        "operationId": "getTableTableidPluginpanelPluginpanelid"
+        "operationId": "getPluginpanel"
       },
       "delete": {
         "description": "Delete a plugin panel",
@@ -50233,7 +50233,7 @@
             "description": "Plugin panel deleted successfully."
           }
         },
-        "operationId": "deleteTableTableidPluginpanelPluginpanelid"
+        "operationId": "deletePluginpanel"
       }
     },
     "/table/{tableId}/plugin-panel": {
@@ -50298,7 +50298,7 @@
             }
           }
         },
-        "operationId": "createTableTableidPluginpanel"
+        "operationId": "createPluginpanel"
       },
       "get": {
         "description": "Get all plugin panels",
@@ -50347,7 +50347,7 @@
             }
           }
         },
-        "operationId": "getTableTableidPluginpanel"
+        "operationId": "getPluginpanel1"
       }
     },
     "/table/{tableId}/plugin-panel/{pluginPanelId}/rename": {
@@ -50416,7 +50416,7 @@
             }
           }
         },
-        "operationId": "modifyTableTableidPluginpanelPluginpanelidRename"
+        "operationId": "modifyPluginpanel"
       }
     },
     "/table/{tableId}/plugin-panel/{pluginPanelId}/layout": {
@@ -50543,7 +50543,7 @@
             }
           }
         },
-        "operationId": "modifyTableTableidPluginpanelPluginpanelidLayout"
+        "operationId": "modifyPluginpanel1"
       }
     },
     "/table/{tableId}/plugin-panel/{pluginPanelId}/install": {
@@ -50623,7 +50623,7 @@
             }
           }
         },
-        "operationId": "createTableTableidPluginpanelPluginpanelidInstall"
+        "operationId": "createPluginpanel1"
       }
     },
     "/table/{tableId}/plugin-panel/{pluginPanelId}/plugin/{pluginInstallId}": {
@@ -50668,7 +50668,7 @@
             "description": "Plugin removed from plugin panel successfully."
           }
         },
-        "operationId": "deleteTableTableidPluginpanelPluginpanelidPluginPlugininstallid"
+        "operationId": "deletePluginpanel1"
       },
       "get": {
         "description": "Get a plugin in plugin panel",
@@ -50744,7 +50744,7 @@
             }
           }
         },
-        "operationId": "getTableTableidPluginpanelPluginpanelidPluginPlugininstallid"
+        "operationId": "getPluginpanel2"
       }
     },
     "/table/{tableId}/plugin-panel/{pluginPanelId}/plugin/{pluginInstallId}/rename": {
@@ -50825,7 +50825,7 @@
             }
           }
         },
-        "operationId": "modifyTableTableidPluginpanelPluginpanelidPluginPlugininstallidRename"
+        "operationId": "modifyPluginpanel2"
       }
     },
     "/table/{tableId}/plugin-panel/{pluginPanelId}/plugin/{pluginInstallId}/update-storage": {
@@ -50897,7 +50897,7 @@
             }
           }
         },
-        "operationId": "modifyTableTableidPluginpanelPluginpanelidPluginPlugininstallidUpdatestorage"
+        "operationId": "modifyPluginpanel3"
       }
     },
     "/table/{tableId}/plugin-context-menu/{pluginInstallId}": {
@@ -51032,7 +51032,7 @@
             }
           }
         },
-        "operationId": "getTableTableidPlugincontextmenuPlugininstallid"
+        "operationId": "getPlugincontextmenu"
       },
       "delete": {
         "description": "Remove a plugin context menu",
@@ -51067,7 +51067,7 @@
             "description": "Plugin context menu removed successfully."
           }
         },
-        "operationId": "deleteTableTableidPlugincontextmenuPlugininstallid"
+        "operationId": "deletePlugincontextmenu"
       }
     },
     "/table/{tableId}/plugin-context-menu/install": {
@@ -51139,7 +51139,7 @@
             }
           }
         },
-        "operationId": "createTableTableidPlugincontextmenuInstall"
+        "operationId": "createPlugincontextmenu"
       }
     },
     "/table/{tableId}/plugin-context-menu/{pluginInstallId}/move": {
@@ -51200,7 +51200,7 @@
             "description": "Plugin context menu moved successfully."
           }
         },
-        "operationId": "updateTableTableidPlugincontextmenuPlugininstallidMove"
+        "operationId": "updatePlugincontextmenu"
       }
     },
     "/table/{tableId}/plugin-context-menu/{pluginInstallId}/rename": {
@@ -51254,7 +51254,7 @@
             "description": "Plugin context menu renamed successfully."
           }
         },
-        "operationId": "modifyTableTableidPlugincontextmenuPlugininstallidRename"
+        "operationId": "modifyPlugincontextmenu"
       }
     },
     "/table/{tableId}/plugin-context-menu/{pluginInstallId}/update-storage": {
@@ -51332,7 +51332,7 @@
             }
           }
         },
-        "operationId": "updateTableTableidPlugincontextmenuPlugininstallidUpdatestorage"
+        "operationId": "updatePlugincontextmenu1"
       }
     },
     "/table/{tableId}/plugin-context-menu": {
@@ -51394,7 +51394,7 @@
             }
           }
         },
-        "operationId": "getTableTableidPlugincontextmenu"
+        "operationId": "getPlugincontextmenu1"
       }
     },
     "/table/{tableId}/plugin-context-menu/{pluginInstallId}/storage": {
@@ -51464,7 +51464,7 @@
             }
           }
         },
-        "operationId": "getTableTableidPlugincontextmenuPlugininstallidStorage"
+        "operationId": "getPlugincontextmenu2"
       }
     }
   }
