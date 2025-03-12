@@ -8,5 +8,3 @@ services:
     environment:
       - OPENAPI_TOKEN=${OPENAPI_TOKEN}
       - SERVICE_FQDN_TEABLE_MCP_8080=true
-    volumes:
-      - ./teable-openapi.json:/app/teable-openapi.json
