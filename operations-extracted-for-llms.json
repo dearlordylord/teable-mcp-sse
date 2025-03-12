@@ -1,0 +1,1815 @@
+{
+  "info": {
+    "title": "Teable App",
+    "version": "1.0.0",
+    "description": "Manage Data as easy as drink a cup of tea"
+  },
+  "operations": [
+    {
+      "operationId": "getGetRecord",
+      "description": "Retrieve a single record by its ID with options to specify field projections and output format.",
+      "summary": "Get record",
+      "path": "/table/{tableId}/record/{recordId}",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyUpdateRecord",
+      "description": "Update a single record by its ID with support for field value typecast and record reordering.",
+      "summary": "Update record",
+      "path": "/table/{tableId}/record/{recordId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "deleteDeleteRecord",
+      "description": "Permanently delete a single record by its ID.",
+      "summary": "Delete record",
+      "path": "/table/{tableId}/record/{recordId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "createDuplicateRecord",
+      "description": "Create a copy of an existing record with optional custom positioning in the view.",
+      "summary": "Duplicate record",
+      "path": "/table/{tableId}/record/{recordId}",
+      "method": "post"
+    },
+    {
+      "operationId": "getListRecords",
+      "description": "Retrieve a list of records with support for filtering, sorting, grouping, and pagination. The response includes record data and optional group information.",
+      "summary": "List records",
+      "path": "/table/{tableId}/record",
+      "method": "get"
+    },
+    {
+      "operationId": "createCreateRecords",
+      "description": "Create one or multiple records with support for field value typecast and custom record ordering.",
+      "summary": "Create records",
+      "path": "/table/{tableId}/record",
+      "method": "post"
+    },
+    {
+      "operationId": "modifyUpdateMultipleRecords",
+      "description": "Update multiple records in a single request with support for field value typecast and record reordering.",
+      "summary": "Update multiple records",
+      "path": "/table/{tableId}/record",
+      "method": "patch"
+    },
+    {
+      "operationId": "deleteDeleteRecords",
+      "description": "Permanently delete multiple records by their IDs in a single request.",
+      "summary": "Delete records",
+      "path": "/table/{tableId}/record",
+      "method": "delete"
+    },
+    {
+      "operationId": "createSpace",
+      "description": "Create a space",
+      "summary": "",
+      "path": "/space",
+      "method": "post"
+    },
+    {
+      "operationId": "getGetSpaceList",
+      "description": "Get space list by query",
+      "summary": "Get space list",
+      "path": "/space",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteSpace",
+      "description": "Delete a space by spaceId",
+      "summary": "",
+      "path": "/space/{spaceId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "getSpace",
+      "description": "Get a space by spaceId",
+      "summary": "",
+      "path": "/space/{spaceId}",
+      "method": "get"
+    },
+    {
+      "operationId": "modifySpace",
+      "description": "Update a space info",
+      "summary": "",
+      "path": "/space/{spaceId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "getSpace1",
+      "description": "List a invitation link to your",
+      "summary": "",
+      "path": "/space/{spaceId}/invitation/link",
+      "method": "get"
+    },
+    {
+      "operationId": "createSpace1",
+      "description": "Create a invitation link to your",
+      "summary": "",
+      "path": "/space/{spaceId}/invitation/link",
+      "method": "post"
+    },
+    {
+      "operationId": "deleteSpace1",
+      "description": "Delete a invitation link to your",
+      "summary": "",
+      "path": "/space/{spaceId}/invitation/link/{invitationId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "modifySpace1",
+      "description": "Update a invitation link to your",
+      "summary": "",
+      "path": "/space/{spaceId}/invitation/link/{invitationId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "createSpace2",
+      "description": "Send invitations by e-mail",
+      "summary": "",
+      "path": "/space/{spaceId}/invitation/email",
+      "method": "post"
+    },
+    {
+      "operationId": "getSpace2",
+      "description": "List a space collaborator",
+      "summary": "",
+      "path": "/space/{spaceId}/collaborators",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteSpace2",
+      "description": "Delete a collaborator",
+      "summary": "",
+      "path": "/space/{spaceId}/collaborators",
+      "method": "delete"
+    },
+    {
+      "operationId": "modifySpace2",
+      "description": "Update a space collaborator",
+      "summary": "",
+      "path": "/space/{spaceId}/collaborators",
+      "method": "patch"
+    },
+    {
+      "operationId": "createBase",
+      "description": "Create a base",
+      "summary": "",
+      "path": "/base",
+      "method": "post"
+    },
+    {
+      "operationId": "deleteBase",
+      "description": "Delete a base by baseId",
+      "summary": "",
+      "path": "/base/{baseId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "getBase",
+      "description": "Get a base by baseId",
+      "summary": "",
+      "path": "/base/{baseId}",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyBase",
+      "description": "Update a base info",
+      "summary": "",
+      "path": "/base/{baseId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "updateView",
+      "description": "Update view order",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/order",
+      "method": "put"
+    },
+    {
+      "operationId": "updateBase",
+      "description": "Update base order",
+      "summary": "",
+      "path": "/base/{baseId}/order",
+      "method": "put"
+    },
+    {
+      "operationId": "getBase1",
+      "description": "Get base list by query",
+      "summary": "",
+      "path": "/base/access/all",
+      "method": "get"
+    },
+    {
+      "operationId": "getBase2",
+      "description": "List a base collaborator",
+      "summary": "",
+      "path": "/base/{baseId}/collaborators",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteBase1",
+      "description": "Delete a base collaborators",
+      "summary": "",
+      "path": "/base/{baseId}/collaborators",
+      "method": "delete"
+    },
+    {
+      "operationId": "modifyBase1",
+      "description": "Update a base collaborator",
+      "summary": "",
+      "path": "/base/{baseId}/collaborators",
+      "method": "patch"
+    },
+    {
+      "operationId": "createBase1",
+      "description": "duplicate a base",
+      "summary": "",
+      "path": "/base/duplicate",
+      "method": "post"
+    },
+    {
+      "operationId": "createBase2",
+      "description": "Create a base from template",
+      "summary": "",
+      "path": "/base/create-from-template",
+      "method": "post"
+    },
+    {
+      "operationId": "getBase3",
+      "description": "Get a base permission",
+      "summary": "",
+      "path": "/base/{baseId}/permission",
+      "method": "get"
+    },
+    {
+      "operationId": "getBase4",
+      "description": "Get base query result",
+      "summary": "",
+      "path": "/base/{baseId}/query",
+      "method": "get"
+    },
+    {
+      "operationId": "getBase5",
+      "description": "List a invitation link to your",
+      "summary": "",
+      "path": "/base/{baseId}/invitation/link",
+      "method": "get"
+    },
+    {
+      "operationId": "createBase3",
+      "description": "Create a invitation link to your",
+      "summary": "",
+      "path": "/base/{baseId}/invitation/link",
+      "method": "post"
+    },
+    {
+      "operationId": "deleteBase2",
+      "description": "Delete a invitation link to your",
+      "summary": "",
+      "path": "/base/{baseId}/invitation/link/{invitationId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "modifyBase2",
+      "description": "Update a invitation link to your",
+      "summary": "",
+      "path": "/base/{baseId}/invitation/link/{invitationId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "createBase4",
+      "description": "Send invitations by e-mail",
+      "summary": "",
+      "path": "/base/{baseId}/invitation/email",
+      "method": "post"
+    },
+    {
+      "operationId": "getBase6",
+      "description": "",
+      "summary": "",
+      "path": "/base/shared-base",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteBase3",
+      "description": "Permanently delete a base by baseId",
+      "summary": "",
+      "path": "/base/{baseId}/permanent",
+      "method": "delete"
+    },
+    {
+      "operationId": "createSpace3",
+      "description": "Add a collaborator to a space",
+      "summary": "",
+      "path": "/space/{spaceId}/collaborator",
+      "method": "post"
+    },
+    {
+      "operationId": "createBase5",
+      "description": "Add a collaborator to a base",
+      "summary": "",
+      "path": "/base/{baseId}/collaborator",
+      "method": "post"
+    },
+    {
+      "operationId": "getBase7",
+      "description": "Get base list by query",
+      "summary": "",
+      "path": "/space/{spaceId}/base",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteSpace3",
+      "description": "Permanently delete a space by spaceId",
+      "summary": "",
+      "path": "/space/{spaceId}/permanent",
+      "method": "delete"
+    },
+    {
+      "operationId": "modifyAdmin",
+      "description": "Get the instance settings",
+      "summary": "",
+      "path": "/admin/setting",
+      "method": "patch"
+    },
+    {
+      "operationId": "getAdmin",
+      "description": "Get the instance settings",
+      "summary": "",
+      "path": "/admin/setting",
+      "method": "get"
+    },
+    {
+      "operationId": "getAdmin1",
+      "description": "Get the public instance settings",
+      "summary": "",
+      "path": "/admin/setting/public",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyAdmin1",
+      "description": "Publish a plugin",
+      "summary": "",
+      "path": "/admin/plugin/{pluginId}/publish",
+      "method": "patch"
+    },
+    {
+      "operationId": "modifyAdmin2",
+      "description": "Admin unpublish a plugin",
+      "summary": "",
+      "path": "/admin/plugin/{pluginId}/unpublish",
+      "method": "patch"
+    },
+    {
+      "operationId": "getSpace3",
+      "description": "Get integration list by query",
+      "summary": "",
+      "path": "/space/{spaceId}/integration",
+      "method": "get"
+    },
+    {
+      "operationId": "createSpace4",
+      "description": "Create a integration to a space",
+      "summary": "",
+      "path": "/space/{spaceId}/integration",
+      "method": "post"
+    },
+    {
+      "operationId": "modifySpace3",
+      "description": "Update a integration to a space",
+      "summary": "",
+      "path": "/space/{spaceId}/integration/{integrationId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "deleteSpace4",
+      "description": "Delete a integration by integrationId",
+      "summary": "",
+      "path": "/space/{spaceId}/integration/{integrationId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "getTrash",
+      "description": "Get trash list for spaces or bases",
+      "summary": "",
+      "path": "/trash",
+      "method": "get"
+    },
+    {
+      "operationId": "getTrash1",
+      "description": "Get trash items for base or table",
+      "summary": "",
+      "path": "/trash/items",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteBase4",
+      "description": "Reset trash items for a base or table",
+      "summary": "",
+      "path": "/trash/reset-items",
+      "method": "delete"
+    },
+    {
+      "operationId": "createSpace5",
+      "description": "restore a space, base, table, etc.",
+      "summary": "",
+      "path": "/trash/restore/{trashId}",
+      "method": "post"
+    },
+    {
+      "operationId": "getGetRecordHistory",
+      "description": "Retrieve the change history of a specific record, including field modifications and user information.",
+      "summary": "Get record history",
+      "path": "/table/{tableId}/record/{recordId}/history",
+      "method": "get"
+    },
+    {
+      "operationId": "getGetTableRecordsHistory",
+      "description": "Retrieve the change history of all records in a table, including field modifications and user information.",
+      "summary": "Get table records history",
+      "path": "/table/{tableId}/record/history",
+      "method": "get"
+    },
+    {
+      "operationId": "createUploadAttachment",
+      "description": "Upload an attachment from a file or URL and append it to the cell",
+      "summary": "Upload attachment",
+      "path": "/table/{tableId}/record/{recordId}/{fieldId}/uploadAttachment",
+      "method": "post"
+    },
+    {
+      "operationId": "getGetRecordStatus",
+      "description": "Retrieve the visibility and deletion status of a specific record.",
+      "summary": "Get record status",
+      "path": "/table/{tableId}/record/{recordId}/status",
+      "method": "get"
+    },
+    {
+      "operationId": "createCreateField",
+      "description": "Create a new field in the specified table with the given configuration",
+      "summary": "Create field",
+      "path": "/table/{tableId}/field",
+      "method": "post"
+    },
+    {
+      "operationId": "getListFields",
+      "description": "Retrieve a list of fields in a table with optional filtering",
+      "summary": "List fields",
+      "path": "/table/{tableId}/field",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteDeleteMultipleFields",
+      "description": "Permanently remove multiple fields from the specified table",
+      "summary": "Delete multiple fields",
+      "path": "/table/{tableId}/field",
+      "method": "delete"
+    },
+    {
+      "operationId": "deleteDeleteField",
+      "description": "Permanently remove a field from the specified table",
+      "summary": "Delete field",
+      "path": "/table/{tableId}/field/{fieldId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "getGetAField",
+      "description": "Retrieve detailed information about a specific field by its ID",
+      "summary": "Get a field",
+      "path": "/table/{tableId}/field/{fieldId}",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyUpdateField",
+      "description": "Update common properties of a field (name, description, dbFieldName). For other property changes, use the convert field API",
+      "summary": "Update field",
+      "path": "/table/{tableId}/field/{fieldId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "updateConvertFieldType",
+      "description": "Convert field to a different type with automatic type casting and symmetric field handling",
+      "summary": "Convert field type",
+      "path": "/table/{tableId}/field/{fieldId}/convert",
+      "method": "put"
+    },
+    {
+      "operationId": "getView",
+      "description": "Getting associated records for a view filter configuration.",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/filter-link-records",
+      "method": "get"
+    },
+    {
+      "operationId": "getGetLinkedRecordsForFilter",
+      "description": "Retrieve associated records that match the view filter configuration for a linked field",
+      "summary": "Get linked records for filter",
+      "path": "/table/{tableId}/field/{fieldId}/filter-link-records",
+      "method": "get"
+    },
+    {
+      "operationId": "createView",
+      "description": "Create a view",
+      "summary": "",
+      "path": "/table/{tableId}/view",
+      "method": "post"
+    },
+    {
+      "operationId": "getGetViewList",
+      "description": "Get view list",
+      "summary": "Get view list",
+      "path": "/table/{tableId}/view",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteView",
+      "description": "Delete a view",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "getView1",
+      "description": "Get a view",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}",
+      "method": "get"
+    },
+    {
+      "operationId": "updateView1",
+      "description": "Update view raw order",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/manual-sort",
+      "method": "put"
+    },
+    {
+      "operationId": "updateView2",
+      "description": "Update view column meta",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/column-meta",
+      "method": "put"
+    },
+    {
+      "operationId": "updateView3",
+      "description": "Update view filter",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/filter",
+      "method": "put"
+    },
+    {
+      "operationId": "updateView4",
+      "description": "Update view sort condition",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/sort",
+      "method": "put"
+    },
+    {
+      "operationId": "updateView5",
+      "description": "Update view group condition",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/group",
+      "method": "put"
+    },
+    {
+      "operationId": "modifyView",
+      "description": "Update view option",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/options",
+      "method": "patch"
+    },
+    {
+      "operationId": "updateView6",
+      "description": "Update record order in view",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/record-order",
+      "method": "put"
+    },
+    {
+      "operationId": "updateView7",
+      "description": "Update view name",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/name",
+      "method": "put"
+    },
+    {
+      "operationId": "updateView8",
+      "description": "Update view description",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/description",
+      "method": "put"
+    },
+    {
+      "operationId": "updateView9",
+      "description": "Update view share meta",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/share-meta",
+      "method": "put"
+    },
+    {
+      "operationId": "createView1",
+      "description": "Refresh view share id",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/refresh-share-id",
+      "method": "post"
+    },
+    {
+      "operationId": "createView2",
+      "description": "Disable view share",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/disable-share",
+      "method": "post"
+    },
+    {
+      "operationId": "createView3",
+      "description": "Enable view share",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/enable-share",
+      "method": "post"
+    },
+    {
+      "operationId": "createView4",
+      "description": "Install a plugin to a view",
+      "summary": "",
+      "path": "/table/{tableId}/view/plugin",
+      "method": "post"
+    },
+    {
+      "operationId": "getDashboard",
+      "description": "Get a list of dashboards in base",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard",
+      "method": "get"
+    },
+    {
+      "operationId": "createDashboard",
+      "description": "Create a new dashboard",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard",
+      "method": "post"
+    },
+    {
+      "operationId": "getDashboard1",
+      "description": "Get a dashboard by id",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard/{id}",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteDashboard",
+      "description": "Delete a dashboard by id",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard/{id}",
+      "method": "delete"
+    },
+    {
+      "operationId": "modifyDashboard",
+      "description": "Rename a dashboard by id",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard/{dashboardId}/rename",
+      "method": "patch"
+    },
+    {
+      "operationId": "modifyDashboard1",
+      "description": "Update a dashboard layout by id",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard/{id}/layout",
+      "method": "patch"
+    },
+    {
+      "operationId": "createDashboard1",
+      "description": "Install a plugin to a dashboard",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard/{id}/plugin",
+      "method": "post"
+    },
+    {
+      "operationId": "deleteDashboard1",
+      "description": "Remove a plugin from a dashboard",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard/{dashboardId}/plugin/{pluginInstallId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "modifyDashboard2",
+      "description": "Rename a plugin in a dashboard",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard/{dashboardId}/plugin/{pluginInstallId}/rename",
+      "method": "patch"
+    },
+    {
+      "operationId": "getDashboard2",
+      "description": "Get a dashboard install plugin by id",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard/{dashboardId}/plugin/{installPluginId}",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyDashboard3",
+      "description": "Update storage of a plugin in a dashboard",
+      "summary": "",
+      "path": "/base/{baseId}/dashboard/{dashboardId}/plugin/{pluginInstallId}/update-storage",
+      "method": "patch"
+    },
+    {
+      "operationId": "modifyView1",
+      "description": "Update storage of a plugin in a view",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/plugin/{pluginInstallId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "getView2",
+      "description": "Get a view install plugin by id",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/plugin",
+      "method": "get"
+    },
+    {
+      "operationId": "updateView10",
+      "description": "Update the locked status of the view",
+      "summary": "",
+      "path": "/table/{tableId}/view/{viewId}/locked",
+      "method": "put"
+    },
+    {
+      "operationId": "getGetAggregatedStatistics",
+      "description": "Returns statistical aggregations of table data based on specified functions and grouping criteria",
+      "summary": "Get aggregated statistics",
+      "path": "/table/{tableId}/aggregation",
+      "method": "get"
+    },
+    {
+      "operationId": "getGetTotalRowCount",
+      "description": "Returns the total number of rows in a view based on applied filters and criteria",
+      "summary": "Get total row count",
+      "path": "/table/{tableId}/aggregation/row-count",
+      "method": "get"
+    },
+    {
+      "operationId": "getGetGroupPoints",
+      "description": "Returns the distribution and count of records across different group points in the view",
+      "summary": "Get group points",
+      "path": "/table/{tableId}/aggregation/group-points",
+      "method": "get"
+    },
+    {
+      "operationId": "getGetDailyCalendarData",
+      "description": "Returns records and count distribution across dates based on specified date range and fields",
+      "summary": "Get daily calendar data",
+      "path": "/table/{tableId}/aggregation/calendar-daily-collection",
+      "method": "get"
+    },
+    {
+      "operationId": "getGetTotalCountOfSearch",
+      "description": "Returns the total count of records matching the specified search criteria and filters",
+      "summary": "Get total count of search",
+      "path": "/table/{tableId}/aggregation/search-count",
+      "method": "get"
+    },
+    {
+      "operationId": "getGetRecordIndicesForSearch",
+      "description": "Returns the indices and record IDs of records matching the search criteria",
+      "summary": "Get record indices for search",
+      "path": "/table/{tableId}/aggregation/search-index",
+      "method": "get"
+    },
+    {
+      "operationId": "createCreateTable",
+      "description": "Create a new table in the specified base with customizable fields, views, and initial records. Default configurations will be applied if not specified.",
+      "summary": "Create table",
+      "path": "/base/{baseId}/table/",
+      "method": "post"
+    },
+    {
+      "operationId": "deleteDeleteTable",
+      "description": "Move a table to trash. The table can be restored within the retention period.",
+      "summary": "Delete table",
+      "path": "/base/{baseId}/table/{tableId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "getGetTableDetails",
+      "description": "Retrieve detailed information about a specific table, including its schema, name, and configuration.",
+      "summary": "Get table details",
+      "path": "/base/{baseId}/table/{tableId}",
+      "method": "get"
+    },
+    {
+      "operationId": "getListTables",
+      "description": "Retrieve a list of all tables in the specified base, including their basic information and configurations.",
+      "summary": "List tables",
+      "path": "/base/{baseId}/table",
+      "method": "get"
+    },
+    {
+      "operationId": "deletePermanentlyDeleteTable",
+      "description": "Permanently delete a table and all its data. This action cannot be undone.",
+      "summary": "Permanently delete table",
+      "path": "/base/{baseId}/table/{tableId}/permanent",
+      "method": "delete"
+    },
+    {
+      "operationId": "updateUpdateTableName",
+      "description": "Update the display name of a table. This will not affect the underlying database table name.",
+      "summary": "Update table name",
+      "path": "/base/{baseId}/table/{tableId}/name",
+      "method": "put"
+    },
+    {
+      "operationId": "updateUpdateTableTcon",
+      "description": "Update the emoji icon of a table. The icon must be a valid emoji character.",
+      "summary": "Update table tcon",
+      "path": "/base/{baseId}/table/{tableId}/icon",
+      "method": "put"
+    },
+    {
+      "operationId": "updateUpdateTableOrder",
+      "description": "Update the display order of a table in the base. This affects the order in which tables are shown in the UI.",
+      "summary": "Update table order",
+      "path": "/base/{baseId}/table/{tableId}/order",
+      "method": "put"
+    },
+    {
+      "operationId": "updateUpdateTableDescription",
+      "description": "Update or remove the description of a table. Set to null to remove the description.",
+      "summary": "Update table description",
+      "path": "/base/{baseId}/table/{tableId}/description",
+      "method": "put"
+    },
+    {
+      "operationId": "updateUpdateDbTableName",
+      "description": "Update the physical database table name. Must be 1-63 characters, start with letter or underscore, contain only letters, numbers and underscore, and be unique within the base.",
+      "summary": "Update db table name",
+      "path": "/base/{baseId}/table/{tableId}/db-table-name",
+      "method": "put"
+    },
+    {
+      "operationId": "getGetDefaultViewId",
+      "description": "Get default view id",
+      "summary": "Get default view id",
+      "path": "/base/{baseId}/table/{tableId}/default-view-id",
+      "method": "get"
+    },
+    {
+      "operationId": "getGetTablePermissions",
+      "description": "Retrieve the current user's permissions for a table, including access rights for table operations, views, records, and fields.",
+      "summary": "Get table permissions",
+      "path": "/base/{baseId}/table/{tableId}/permission",
+      "method": "get"
+    },
+    {
+      "operationId": "createToggleTableIndex",
+      "description": "Toggle table index",
+      "summary": "Toggle table index",
+      "path": "/base/{baseId}/table/{tableId}/index",
+      "method": "post"
+    },
+    {
+      "operationId": "createGetActivatedIndex",
+      "description": "Get the activated index of a table",
+      "summary": "Get activated index",
+      "path": "/base/{baseId}/table/{tableId}/activated-index",
+      "method": "post"
+    },
+    {
+      "operationId": "getGetAbnormalIndexes",
+      "description": "Retrieve a list of abnormal database indexes for a specific table by index type. This helps identify potential performance or maintenance issues.",
+      "summary": "Get abnormal indexes",
+      "path": "/base/{baseId}/table/{tableId}/abnormal-index",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyRepairTableIndex",
+      "description": "Repair table index",
+      "summary": "Repair table index",
+      "path": "/base/{baseId}/table/{tableId}/index/repair",
+      "method": "patch"
+    },
+    {
+      "operationId": "createDuplicateATable",
+      "description": "Duplicate a table",
+      "summary": "Duplicate a table",
+      "path": "/base/{baseId}/table/{tableId}/duplicate",
+      "method": "post"
+    },
+    {
+      "operationId": "getGetIdsFromRange",
+      "description": "Retrieve record and field identifiers based on the selected range coordinates in a table",
+      "summary": "Get ids from range",
+      "path": "/table/{tableId}/selection/range-to-id",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyClearSelectedRangeContent",
+      "description": "Remove all content from the selected table range",
+      "summary": "Clear selected range content",
+      "path": "/table/{tableId}/selection/clear",
+      "method": "patch"
+    },
+    {
+      "operationId": "getCopySelectedTableContent",
+      "description": "Copy content from selected table ranges including headers if specified",
+      "summary": "Copy selected table content",
+      "path": "/table/{tableId}/selection/copy",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyPasteContentIntoSelectedRange",
+      "description": "Apply paste operation to insert content into the selected table range",
+      "summary": "Paste content into selected range",
+      "path": "/table/{tableId}/selection/paste",
+      "method": "patch"
+    },
+    {
+      "operationId": "deleteDeleteSelectedRangeData",
+      "description": "Delete records or fields within the selected table range",
+      "summary": "Delete selected range data",
+      "path": "/table/{tableId}/selection/delete",
+      "method": "delete"
+    },
+    {
+      "operationId": "modifyPreviewPasteOperationResults",
+      "description": "Preview the results of a paste operation without applying changes to the table",
+      "summary": "Preview paste operation results",
+      "path": "/table/{tableId}/selection/temporaryPaste",
+      "method": "patch"
+    },
+    {
+      "operationId": "getPlan",
+      "description": "Generate calculation plan for the field",
+      "summary": "",
+      "path": "/table/{tableId}/field/{fieldId}/plan",
+      "method": "get"
+    },
+    {
+      "operationId": "updatePlan",
+      "description": "Generate calculation plan for converting the field",
+      "summary": "",
+      "path": "/table/{tableId}/field/{fieldId}/plan",
+      "method": "put"
+    },
+    {
+      "operationId": "createPlan",
+      "description": "Generate calculation plan for creating the field",
+      "summary": "",
+      "path": "/table/{tableId}/field/plan",
+      "method": "post"
+    },
+    {
+      "operationId": "createAttachments",
+      "description": "Get Attachment information",
+      "summary": "",
+      "path": "/attachments/notify/{token}",
+      "method": "post"
+    },
+    {
+      "operationId": "getAttachments",
+      "description": "Upload attachment",
+      "summary": "",
+      "path": "/attachments/{token}",
+      "method": "get"
+    },
+    {
+      "operationId": "createAttachments1",
+      "description": "Retrieve upload signature.",
+      "summary": "",
+      "path": "/attachments/signature",
+      "method": "post"
+    },
+    {
+      "operationId": "createAttachments2",
+      "description": "Upload attachment",
+      "summary": "",
+      "path": "/attachments/upload/{token}",
+      "method": "post"
+    },
+    {
+      "operationId": "modifyUser",
+      "description": "Update user name",
+      "summary": "",
+      "path": "/user/name",
+      "method": "patch"
+    },
+    {
+      "operationId": "modifyUser1",
+      "description": "Update user avatar",
+      "summary": "",
+      "path": "/user/avatar",
+      "method": "patch"
+    },
+    {
+      "operationId": "modifyUser2",
+      "description": "Update user notification meta",
+      "summary": "",
+      "path": "/user/notify-meta",
+      "method": "patch"
+    },
+    {
+      "operationId": "getAuth",
+      "description": "Get user information",
+      "summary": "",
+      "path": "/auth/user/me",
+      "method": "get"
+    },
+    {
+      "operationId": "createAuth",
+      "description": "Sign in",
+      "summary": "",
+      "path": "/auth/signin",
+      "method": "post"
+    },
+    {
+      "operationId": "createAuth1",
+      "description": "Sign out",
+      "summary": "",
+      "path": "/auth/signout",
+      "method": "post"
+    },
+    {
+      "operationId": "createAuth2",
+      "description": "Sign up",
+      "summary": "",
+      "path": "/auth/signup",
+      "method": "post"
+    },
+    {
+      "operationId": "modifyAuth",
+      "description": "Change password",
+      "summary": "",
+      "path": "/auth/change-password",
+      "method": "patch"
+    },
+    {
+      "operationId": "createAuth3",
+      "description": "Send reset password email",
+      "summary": "",
+      "path": "/auth/send-reset-password-email",
+      "method": "post"
+    },
+    {
+      "operationId": "createAuth4",
+      "description": "Reset password",
+      "summary": "",
+      "path": "/auth/reset-password",
+      "method": "post"
+    },
+    {
+      "operationId": "createAuth5",
+      "description": "Add password",
+      "summary": "",
+      "path": "/auth/add-password",
+      "method": "post"
+    },
+    {
+      "operationId": "getAuth1",
+      "description": "Get user information via access token",
+      "summary": "",
+      "path": "/auth/user",
+      "method": "get"
+    },
+    {
+      "operationId": "createAuth6",
+      "description": "Send signup verification code",
+      "summary": "",
+      "path": "/auth/send-signup-verification-code",
+      "method": "post"
+    },
+    {
+      "operationId": "modifyAuth1",
+      "description": "Change email",
+      "summary": "",
+      "path": "/auth/change-email",
+      "method": "patch"
+    },
+    {
+      "operationId": "createAuth7",
+      "description": "Send change email code",
+      "summary": "",
+      "path": "/auth/send-change-email-code",
+      "method": "post"
+    },
+    {
+      "operationId": "getAuth2",
+      "description": "Get temp token",
+      "summary": "",
+      "path": "/auth/temp-token",
+      "method": "get"
+    },
+    {
+      "operationId": "createDbconnection",
+      "description": "Create a db connection url",
+      "summary": "",
+      "path": "/base/{baseId}/connection",
+      "method": "post"
+    },
+    {
+      "operationId": "deleteDbconnection",
+      "description": "Delete a db connection",
+      "summary": "",
+      "path": "/base/{baseId}/connection",
+      "method": "delete"
+    },
+    {
+      "operationId": "getDbconnection",
+      "description": "Get db connection info",
+      "summary": "",
+      "path": "/base/{baseId}/connection",
+      "method": "get"
+    },
+    {
+      "operationId": "createInvitation",
+      "description": "Accept invitation link",
+      "summary": "",
+      "path": "/invitation/link/accept",
+      "method": "post"
+    },
+    {
+      "operationId": "createShare",
+      "description": "share view auth password",
+      "summary": "",
+      "path": "/share/{shareId}/view/auth",
+      "method": "post"
+    },
+    {
+      "operationId": "getShare",
+      "description": "get share view info",
+      "summary": "",
+      "path": "/share/{shareId}/view",
+      "method": "get"
+    },
+    {
+      "operationId": "getShare1",
+      "description": "Get share view aggregations",
+      "summary": "",
+      "path": "/share/{shareId}/view/aggregations",
+      "method": "get"
+    },
+    {
+      "operationId": "getShare2",
+      "description": "Get row count for the share view",
+      "summary": "",
+      "path": "/share/{shareId}/view/row-count",
+      "method": "get"
+    },
+    {
+      "operationId": "createShare1",
+      "description": "share form view submit new record",
+      "summary": "",
+      "path": "/share/{shareId}/view/form-submit",
+      "method": "post"
+    },
+    {
+      "operationId": "getShare3",
+      "description": "Copy operations in Share view",
+      "summary": "",
+      "path": "/share/{shareId}/view/copy",
+      "method": "get"
+    },
+    {
+      "operationId": "getShare4",
+      "description": "Get group points for the share view",
+      "summary": "",
+      "path": "/share/{shareId}/view/group-points",
+      "method": "get"
+    },
+    {
+      "operationId": "getShare5",
+      "description": "In a view with a field selector, link the records list of the associated field selector to get the. Linking the desired ones inside the share view should fetch the ones that have already been selected.",
+      "summary": "",
+      "path": "/share/{shareId}/view/link-records",
+      "method": "get"
+    },
+    {
+      "operationId": "getShare6",
+      "description": "View collaborators in a view with a user field selector.",
+      "summary": "",
+      "path": "/share/{shareId}/view/collaborators",
+      "method": "get"
+    },
+    {
+      "operationId": "getShare7",
+      "description": "Get share view search result count with query",
+      "summary": "",
+      "path": "/share/{shareId}/view/search-count",
+      "method": "get"
+    },
+    {
+      "operationId": "getShare8",
+      "description": "Get share view record index with search query",
+      "summary": "",
+      "path": "/share/{shareId}/view/search-index",
+      "method": "get"
+    },
+    {
+      "operationId": "getShare9",
+      "description": "Get calendar daily collection for the share view",
+      "summary": "",
+      "path": "/share/{shareId}/view/calendar-daily-collection",
+      "method": "get"
+    },
+    {
+      "operationId": "getNotification",
+      "description": "List a user notification",
+      "summary": "",
+      "path": "/notifications",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyNotification",
+      "description": "Patch notification status",
+      "summary": "",
+      "path": "/notifications/{notificationId}/status",
+      "method": "patch"
+    },
+    {
+      "operationId": "modifyNotification1",
+      "description": "mark all notifications as read",
+      "summary": "",
+      "path": "/notifications/read-all",
+      "method": "patch"
+    },
+    {
+      "operationId": "getNotification1",
+      "description": "User notification unread count",
+      "summary": "",
+      "path": "/notifications/unread-count",
+      "method": "get"
+    },
+    {
+      "operationId": "createAccesstoken",
+      "description": "Create access token",
+      "summary": "",
+      "path": "/access-token",
+      "method": "post"
+    },
+    {
+      "operationId": "getAccesstoken",
+      "description": "List access token",
+      "summary": "",
+      "path": "/access-token",
+      "method": "get"
+    },
+    {
+      "operationId": "createAccesstoken1",
+      "description": "Refresh access token",
+      "summary": "",
+      "path": "/access-token/{id}/refresh",
+      "method": "post"
+    },
+    {
+      "operationId": "deleteAccesstoken",
+      "description": "Delete access token",
+      "summary": "",
+      "path": "/access-token/{id}",
+      "method": "delete"
+    },
+    {
+      "operationId": "updateAccesstoken",
+      "description": "Update access token",
+      "summary": "",
+      "path": "/access-token/{id}",
+      "method": "put"
+    },
+    {
+      "operationId": "getAccesstoken1",
+      "description": "Get access token",
+      "summary": "",
+      "path": "/access-token/{id}",
+      "method": "get"
+    },
+    {
+      "operationId": "getImport",
+      "description": "Get a column info from analyze sheet",
+      "summary": "",
+      "path": "/import/analyze",
+      "method": "get"
+    },
+    {
+      "operationId": "createImport",
+      "description": "create table from file",
+      "summary": "",
+      "path": "/import/{baseId}",
+      "method": "post"
+    },
+    {
+      "operationId": "modifyImport",
+      "description": "import table inplace",
+      "summary": "",
+      "path": "/import/{baseId}/{tableId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "getExport",
+      "description": "export csv from table",
+      "summary": "",
+      "path": "/export/{tableId}",
+      "method": "get"
+    },
+    {
+      "operationId": "deletePin",
+      "description": "Delete pin",
+      "summary": "",
+      "path": "/pin",
+      "method": "delete"
+    },
+    {
+      "operationId": "createPin",
+      "description": "Add pin",
+      "summary": "",
+      "path": "/pin/",
+      "method": "post"
+    },
+    {
+      "operationId": "getPin",
+      "description": "Get  pin list",
+      "summary": "",
+      "path": "/pin/list",
+      "method": "get"
+    },
+    {
+      "operationId": "updatePin",
+      "description": "Update  pin order",
+      "summary": "",
+      "path": "/pin/order",
+      "method": "put"
+    },
+    {
+      "operationId": "getBilling",
+      "description": "Retrieves a summary of subscription information for a space",
+      "summary": "",
+      "path": "/space/{spaceId}/billing/subscription/summary",
+      "method": "get"
+    },
+    {
+      "operationId": "getBilling1",
+      "description": "Retrieves a summary of subscription information across all spaces",
+      "summary": "",
+      "path": "/billing/subscription/summary",
+      "method": "get"
+    },
+    {
+      "operationId": "getUsage",
+      "description": "Get usage information for the space",
+      "summary": "",
+      "path": "/space/{spaceId}/usage",
+      "method": "get"
+    },
+    {
+      "operationId": "getUsage1",
+      "description": "Get usage information for the instance",
+      "summary": "",
+      "path": "/instance/usage",
+      "method": "get"
+    },
+    {
+      "operationId": "getUsage2",
+      "description": "Get usage information for the base",
+      "summary": "",
+      "path": "/base/{baseId}/usage",
+      "method": "get"
+    },
+    {
+      "operationId": "getOauth",
+      "description": "Get the OAuth application",
+      "summary": "",
+      "path": "/oauth/client/{clientId}",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteOauth",
+      "description": "Delete an OAuth application",
+      "summary": "",
+      "path": "/oauth/client/{clientId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "updateOauth",
+      "description": "Update an OAuth application",
+      "summary": "",
+      "path": "/oauth/client/{clientId}",
+      "method": "put"
+    },
+    {
+      "operationId": "createOauth",
+      "description": "Create a new OAuth application",
+      "summary": "",
+      "path": "/oauth/client",
+      "method": "post"
+    },
+    {
+      "operationId": "getOauth1",
+      "description": "Get the list of OAuth applications",
+      "summary": "",
+      "path": "/oauth/client",
+      "method": "get"
+    },
+    {
+      "operationId": "deleteOauth1",
+      "description": "Delete the OAuth secret",
+      "summary": "",
+      "path": "/oauth/client/{clientId}/secret/{secretId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "createOauth1",
+      "description": "Generate a new OAuth secret",
+      "summary": "",
+      "path": "/oauth/client/{clientId}/secret",
+      "method": "post"
+    },
+    {
+      "operationId": "getOauth2",
+      "description": "Get the OAuth application",
+      "summary": "",
+      "path": "/oauth/decision/{transactionId}",
+      "method": "get"
+    },
+    {
+      "operationId": "createOauth2",
+      "description": "",
+      "summary": "",
+      "path": "/oauth/client/{clientId}/revoke-access",
+      "method": "post"
+    },
+    {
+      "operationId": "getOauth3",
+      "description": "Get the list of authorized applications",
+      "summary": "",
+      "path": "/oauth/client/authorized/list",
+      "method": "get"
+    },
+    {
+      "operationId": "createRecord",
+      "description": "Undo the last operation",
+      "summary": "",
+      "path": "/table/{tableId}/undo-redo/undo",
+      "method": "post"
+    },
+    {
+      "operationId": "createRecord1",
+      "description": "Redo the last operation",
+      "summary": "",
+      "path": "/table/{tableId}/undo-redo/redo",
+      "method": "post"
+    },
+    {
+      "operationId": "createPlugin",
+      "description": "Create a plugin",
+      "summary": "",
+      "path": "/plugin",
+      "method": "post"
+    },
+    {
+      "operationId": "getPlugin",
+      "description": "Get plugins",
+      "summary": "",
+      "path": "/plugin",
+      "method": "get"
+    },
+    {
+      "operationId": "deletePlugin",
+      "description": "Delete a plugin",
+      "summary": "",
+      "path": "/plugin/{id}",
+      "method": "delete"
+    },
+    {
+      "operationId": "updatePlugin",
+      "description": "Update a plugin",
+      "summary": "",
+      "path": "/plugin/{id}",
+      "method": "put"
+    },
+    {
+      "operationId": "createPlugin1",
+      "description": "Regenerate a plugin secret",
+      "summary": "",
+      "path": "/plugin/{id}/regenerate-secret",
+      "method": "post"
+    },
+    {
+      "operationId": "getPlugin1",
+      "description": "Get a plugin",
+      "summary": "",
+      "path": "/plugin/{pluginId}",
+      "method": "get"
+    },
+    {
+      "operationId": "getPlugin2",
+      "description": "Get a list of plugins center",
+      "summary": "",
+      "path": "/plugin/center/list",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyPlugin",
+      "description": "Submit a plugin",
+      "summary": "",
+      "path": "/plugin/{pluginId}/submit",
+      "method": "patch"
+    },
+    {
+      "operationId": "getPlugin3",
+      "description": "Get a token",
+      "summary": "",
+      "path": "/plugin/{pluginId}/token",
+      "method": "get"
+    },
+    {
+      "operationId": "createPlugin2",
+      "description": "Refresh a token",
+      "summary": "",
+      "path": "/plugin/{pluginId}/refreshToken",
+      "method": "post"
+    },
+    {
+      "operationId": "createPlugin3",
+      "description": "Get an auth code",
+      "summary": "",
+      "path": "/plugin/{pluginId}/authCode",
+      "method": "post"
+    },
+    {
+      "operationId": "modifyPlugin1",
+      "description": "",
+      "summary": "",
+      "path": "/plugin/{pluginId}/unpublish",
+      "method": "patch"
+    },
+    {
+      "operationId": "createComment",
+      "description": "create record comment reaction",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/{commentId}/reaction",
+      "method": "post"
+    },
+    {
+      "operationId": "deleteComment",
+      "description": "delete record comment reaction",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/{commentId}/reaction",
+      "method": "delete"
+    },
+    {
+      "operationId": "getComment",
+      "description": "Get record comment detail",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/{commentId}",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyComment",
+      "description": "update record comment",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/{commentId}",
+      "method": "patch"
+    },
+    {
+      "operationId": "deleteComment1",
+      "description": "delete record comment",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/{commentId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "getComment1",
+      "description": "Get record comment list",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/list",
+      "method": "get"
+    },
+    {
+      "operationId": "createComment1",
+      "description": "create record comment",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/create",
+      "method": "post"
+    },
+    {
+      "operationId": "createComment2",
+      "description": "subscribe record comment's active",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/subscribe",
+      "method": "post"
+    },
+    {
+      "operationId": "deleteComment2",
+      "description": "unsubscribe record comment",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/subscribe",
+      "method": "delete"
+    },
+    {
+      "operationId": "getComment2",
+      "description": "get record comment subscribe detail",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/subscribe",
+      "method": "get"
+    },
+    {
+      "operationId": "getComment3",
+      "description": "Get record comment attachment url",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/attachment/{path}",
+      "method": "get"
+    },
+    {
+      "operationId": "getComment4",
+      "description": "Get record comment counts by query",
+      "summary": "",
+      "path": "/comment/{tableId}/count",
+      "method": "get"
+    },
+    {
+      "operationId": "getComment5",
+      "description": "Get record comment count",
+      "summary": "",
+      "path": "/comment/{tableId}/{recordId}/count",
+      "method": "get"
+    },
+    {
+      "operationId": "getOrganization",
+      "description": "Get my organization",
+      "summary": "",
+      "path": "/organization/me",
+      "method": "get"
+    },
+    {
+      "operationId": "getOrganization1",
+      "description": "",
+      "summary": "",
+      "path": "/organization/department",
+      "method": "get"
+    },
+    {
+      "operationId": "getOrganization2",
+      "description": "",
+      "summary": "",
+      "path": "/organization/department-user",
+      "method": "get"
+    },
+    {
+      "operationId": "createAi",
+      "description": "Generate ai stream",
+      "summary": "",
+      "path": "/api/{baseId}/ai/generate-stream",
+      "method": "post"
+    },
+    {
+      "operationId": "getAi",
+      "description": "Get the configuration of ai, including instance and space configuration",
+      "summary": "",
+      "path": "/{baseId}/ai/config",
+      "method": "get"
+    },
+    {
+      "operationId": "getIntegrity",
+      "description": "Check integrity of link fields in a base",
+      "summary": "",
+      "path": "/integrity/base/{baseId}/link-check",
+      "method": "get"
+    },
+    {
+      "operationId": "createIntegrity",
+      "description": "Fix integrity of link fields in a base",
+      "summary": "",
+      "path": "/integrity/base/{baseId}/link-fix",
+      "method": "post"
+    },
+    {
+      "operationId": "getPluginpanel",
+      "description": "Get a plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel/{pluginPanelId}",
+      "method": "get"
+    },
+    {
+      "operationId": "deletePluginpanel",
+      "description": "Delete a plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel/{pluginPanelId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "createPluginpanel",
+      "description": "Create a plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel",
+      "method": "post"
+    },
+    {
+      "operationId": "getPluginpanel1",
+      "description": "Get all plugin panels",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyPluginpanel",
+      "description": "Rename a plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel/{pluginPanelId}/rename",
+      "method": "patch"
+    },
+    {
+      "operationId": "modifyPluginpanel1",
+      "description": "Update the layout of a plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel/{pluginPanelId}/layout",
+      "method": "patch"
+    },
+    {
+      "operationId": "createPluginpanel1",
+      "description": "Install a plugin to a table plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel/{pluginPanelId}/install",
+      "method": "post"
+    },
+    {
+      "operationId": "deletePluginpanel1",
+      "description": "Remove a plugin from a plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel/{pluginPanelId}/plugin/{pluginInstallId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "getPluginpanel2",
+      "description": "Get a plugin in plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel/{pluginPanelId}/plugin/{pluginInstallId}",
+      "method": "get"
+    },
+    {
+      "operationId": "modifyPluginpanel2",
+      "description": "Rename a plugin in a plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel/{pluginPanelId}/plugin/{pluginInstallId}/rename",
+      "method": "patch"
+    },
+    {
+      "operationId": "modifyPluginpanel3",
+      "description": "Update storage of a plugin in a plugin panel",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-panel/{pluginPanelId}/plugin/{pluginInstallId}/update-storage",
+      "method": "patch"
+    },
+    {
+      "operationId": "getPlugincontextmenu",
+      "description": "",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-context-menu/{pluginInstallId}",
+      "method": "get"
+    },
+    {
+      "operationId": "deletePlugincontextmenu",
+      "description": "Remove a plugin context menu",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-context-menu/{pluginInstallId}",
+      "method": "delete"
+    },
+    {
+      "operationId": "createPlugincontextmenu",
+      "description": "Install a plugin context menu",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-context-menu/install",
+      "method": "post"
+    },
+    {
+      "operationId": "updatePlugincontextmenu",
+      "description": "",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-context-menu/{pluginInstallId}/move",
+      "method": "put"
+    },
+    {
+      "operationId": "modifyPlugincontextmenu",
+      "description": "Rename a plugin context menu",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-context-menu/{pluginInstallId}/rename",
+      "method": "patch"
+    },
+    {
+      "operationId": "updatePlugincontextmenu1",
+      "description": "",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-context-menu/{pluginInstallId}/update-storage",
+      "method": "put"
+    },
+    {
+      "operationId": "getPlugincontextmenu1",
+      "description": "",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-context-menu",
+      "method": "get"
+    },
+    {
+      "operationId": "getPlugincontextmenu2",
+      "description": "",
+      "summary": "",
+      "path": "/table/{tableId}/plugin-context-menu/{pluginInstallId}/storage",
+      "method": "get"
+    }
+  ]
+}
